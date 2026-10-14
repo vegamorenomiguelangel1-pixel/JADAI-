@@ -1,0 +1,23 @@
+{
+  "name": "JADAI",
+  "short_name": "JADAI",
+  "lang": "es-BO",
+  "description": "Red de estudiantes y docentes que validan proyectos de IA. Santa Cruz de la Sierra, Bolivia.",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#0c0c0c",
+  "theme_color": "#ffffff",
+  "icons": [
+    {
+      "src": "assets/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "assets/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    }
+  ]
+}
