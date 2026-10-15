@@ -5,7 +5,7 @@
   "description": "Red de estudiantes y docentes que validan proyectos de IA. Santa Cruz de la Sierra, Bolivia.",
   "start_url": "./",
   "display": "standalone",
-  "background_color": "#0c0c0c",
+  "background_color": "#ffffff",
   "theme_color": "#ffffff",
   "icons": [
     {

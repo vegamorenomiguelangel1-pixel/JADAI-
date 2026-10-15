@@ -39,16 +39,14 @@ No inventes estos datos: el sitio los deja marcados a propósito.
 - JADAI **aún no tiene personería jurídica** y está en etapa inicial. El sitio lo dice.
 - **No hay alianzas firmadas**, eventos propios realizados ni formulario en línea. No agregues logos de socios, testimonios ni cifras de miembros hasta que existan.
 
-## Marca y tipografía
+## Marca
 
-Los archivos de la marca están en `assets/`:
+El nombre, cuando es marca, usa los archivos originales sin redibujarlos:
 
-- `logo-con-texto.svg` / `.png` — marca con la palabra JADAI, para fondo claro.
-- `logo-sin-texto.svg` / `.png` — la marca sola, para fondo claro.
-- `logo-punto-verde.svg` / `.png` — el punto verde, para acentos.
-- `logo-*-sobre-negro.svg` — la misma marca en blanco, para fondo negro.
-- `favicon.svg`, `favicon.ico` y la imagen Open Graph `assets/og.png`.
+- `assets/logo-con-texto.png` — marca con la palabra JADAI.
+- `assets/logo-sin-texto.png` — la marca sola.
+- `assets/logo-punto-verde.png` — el punto verde.
 
-Colores: negro `#0C0C0C`, blanco y verde `#2A9279`. Para texto pequeño sobre blanco se usa un verde más oscuro (`#145C4C`) porque el verde de marca no alcanza contraste.
+Colores: negro `#0C0C0C`, blanco y verde `#2A9279`. El texto pequeño sobre blanco usa `#145C4C`, el mismo verde más oscuro, para que se pueda leer.
 
-Las fuentes (Fraunces y Source Sans 3, licencia SIL Open Font License) están en `assets/fonts/`.
+La tipografía del sitio es Outfit (SIL Open Font License), una sans geométrica fina, alineada con el letrero del logo. El nombre no se vuelve a componer en otra fuente: donde hace de logo, va la imagen.
