@@ -205,6 +205,13 @@ var CONTACT = {
     return "";
   }
 
+  function showContact() {
+    var section = document.getElementById("proponer");
+    if (!section) return;
+    var reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    section.scrollIntoView({ behavior: reduce ? "auto" : "smooth", block: "start" });
+  }
+
   if (tabs.length && draft && panel) {
     tabs.forEach(function (tab) {
       tab.addEventListener("click", function () {
@@ -246,21 +253,26 @@ var CONTACT = {
     document.querySelectorAll("a[data-rol]").forEach(function (link) {
       link.addEventListener("click", function () {
         selectRole(link.getAttribute("data-rol"));
+        showContact();
       });
     });
 
     window.addEventListener("hashchange", function () {
       var role = roleFromHash();
-      if (role) selectRole(role);
+      if (!role) return;
+      selectRole(role);
+      showContact();
     });
 
     draft.addEventListener("input", refreshOutbound);
 
-    var initial = roleFromHash() || "proyecto";
+    var fromHash = roleFromHash();
+    var initial = fromHash || "proyecto";
     if (initial === "proyecto") {
       currentRole = "";
     }
     selectRole(initial);
+    if (fromHash) showContact();
   }
 
   function showLink(key, label) {

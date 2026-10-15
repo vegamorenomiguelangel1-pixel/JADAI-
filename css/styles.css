@@ -124,8 +124,9 @@ h2[id],
 
 .anchor {
   display: block;
-  height: 0;
-  overflow: hidden;
+  height: 1px;
+  margin-top: -1px;
+  pointer-events: none;
 }
 
 .kicker {
