@@ -9,7 +9,7 @@
     <meta name="description" content="Red de estudiantes y docentes de universidades de Bolivia que validan proyectos de IA. Comunidad estudiantil sin fines de lucro en Santa Cruz de la Sierra.">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://vegamorenomiguelangel1-pixel.github.io/JADAI-/">
-    <!-- Por completar: si hay un dominio propio, cambia canonical, og:url y og:image. -->
+    <!-- Si hay un dominio propio, cambia canonical, og:url y og:image. -->
     <meta property="og:type" content="website">
     <meta property="og:locale" content="es_BO">
     <meta property="og:site_name" content="JADAI">
@@ -47,10 +47,11 @@
         <nav id="nav" class="nav-panel" aria-label="Secciones">
           <ul>
             <li><a href="#como">Cómo funciona</a></li>
+            <li><a href="#hacemos">Qué hacemos</a></li>
             <li><a href="#fundadores">Fundadores</a></li>
             <li><a href="#unete">Únete</a></li>
           </ul>
-          <a class="btn btn-nav" href="#proponer">Propón tu proyecto</a>
+          <a class="btn btn-nav" href="#proyecto" data-rol="proyecto">Propón tu proyecto</a>
         </nav>
       </div>
     </header>
@@ -66,94 +67,231 @@
             </p>
             <h1>Tu idea de IA,<br> validada en conjunto.</h1>
             <p class="deck">Para que ninguna buena idea de IA en Bolivia se quede sola.</p>
-            <p class="lead">Estudiantes y docentes de distintas universidades se ayudan a validar proyectos de IA y a hacerlos crecer hasta la sociedad. Es una comunidad sin fines de lucro: nace en Santa Cruz de la Sierra, todavía sin personería jurídica, y busca llegar al resto de Bolivia.</p>
+            <p class="lead">Estudiantes y docentes de distintas universidades validan proyectos de IA y los ayudan a crecer. Comunidad sin fines de lucro, de Santa Cruz de la Sierra para el resto de Bolivia.</p>
             <p class="name-note">
               <span lang="en">Joint Academic Development in Artificial Intelligence.</span>
               Desarrollo Académico Conjunto en Inteligencia Artificial. «Conjunto» es trabajar entre varios, nunca solo.
             </p>
             <div class="actions">
-              <a class="btn" href="#proponer">Propón tu proyecto</a>
+              <a class="btn" href="#proyecto" data-rol="proyecto">Propón tu proyecto</a>
               <a class="btn btn-ghost" href="#como">Cómo funciona</a>
             </div>
-            <p class="vision"><span class="chip">Por confirmar</span> El año 2030, como horizonte para ser la red académica de IA de referencia en Bolivia, no es un compromiso.</p>
           </div>
         </div>
       </section>
 
       <section class="block" id="como" aria-labelledby="como-titulo">
         <div class="wrap">
-          <p class="kicker">El núcleo</p>
+          <p class="kicker">Revisión</p>
           <h2 id="como-titulo">Cómo funciona</h2>
-          <p class="lede">Conecta recibe la idea. La revisan, como mínimo, un docente y un par de otra universidad: alguien que mira el trabajo desde fuera de la tuya. Vuelve una devolución escrita corta, con próximos pasos. Es la definición de trabajo.</p>
-          <ol class="questions">
+          <p class="lede">Una revisión corta, entre universidades, con devolución por escrito.</p>
+          <ol class="steps">
+            <li>
+              <span class="step-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M4.5 12.5 20 5.5l-6.2 14-2.4-6.2L4.5 12.5z"/>
+                </svg>
+              </span>
+              <div>
+                <h3>Envías tu idea</h3>
+                <p>Un resumen corto: el problema, para quién es y el método.</p>
+              </div>
+            </li>
+            <li>
+              <span class="step-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round">
+                  <circle cx="7" cy="8" r="2.1"/>
+                  <circle cx="17" cy="8" r="2.1"/>
+                  <path d="M3.8 17.5c.5-2.1 1.9-3.2 3.2-3.2s2.7 1.1 3.2 3.2"/>
+                  <path d="M13.8 17.5c.5-2.1 1.9-3.2 3.2-3.2s2.7 1.1 3.2 3.2"/>
+                </svg>
+              </span>
+              <div>
+                <h3>Asignación</h3>
+                <p>La red te junta con un docente y con un par de otra universidad.</p>
+              </div>
+            </li>
+            <li>
+              <span class="step-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
+                  <rect x="4" y="4" width="6.5" height="6.5" rx="1.2"/>
+                  <rect x="13.5" y="4" width="6.5" height="6.5" rx="1.2"/>
+                  <rect x="4" y="13.5" width="6.5" height="6.5" rx="1.2"/>
+                  <rect x="13.5" y="13.5" width="6.5" height="6.5" rx="1.2"/>
+                </svg>
+              </span>
+              <div>
+                <h3>Revisión en 4 ejes</h3>
+                <p>Miran el trabajo con las cuatro preguntas de abajo.</p>
+              </div>
+            </li>
+            <li>
+              <span class="step-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round">
+                  <path d="M6 6.5h12v8.2H9.2L6 18.2V6.5z"/>
+                  <path d="M9 10h6M9 13h4" stroke-linecap="round"/>
+                </svg>
+              </span>
+              <div>
+                <h3>Devolución escrita</h3>
+                <p>Qué mejorar, el siguiente paso y a quién conviene acercarte.</p>
+              </div>
+            </li>
+          </ol>
+
+          <h3 class="subhead" id="ejes-titulo">Qué se revisa</h3>
+          <ul class="criteria" aria-labelledby="ejes-titulo">
             <li>
               <span class="num" aria-hidden="true">01</span>
-              <h3>¿Está claro el problema y para quién es?</h3>
+              <h3>Problema y usuario</h3>
+              <p>¿Está claro el problema y para quién es?</p>
             </li>
             <li>
               <span class="num" aria-hidden="true">02</span>
-              <h3>¿El método es adecuado y se puede repetir?</h3>
+              <h3>Método y repetibilidad</h3>
+              <p>¿El método es adecuado y se puede repetir?</p>
             </li>
             <li>
               <span class="num" aria-hidden="true">03</span>
-              <h3>¿Es viable con los datos y recursos que existen?</h3>
+              <h3>Datos y viabilidad</h3>
+              <p>¿Es viable con los datos y recursos que existen?</p>
             </li>
             <li>
               <span class="num" aria-hidden="true">04</span>
-              <h3>¿Se usa la IA de forma ética y responsable?</h3>
+              <h3>Ética y responsabilidad</h3>
+              <p>¿Se usa la IA de forma ética y responsable?</p>
             </li>
-          </ol>
+          </ul>
         </div>
+
         <div class="disclaimer">
           <div class="wrap">
-            <p class="disclaimer-title">No es una certificación oficial ni un aval de una universidad.</p>
-            <p>La revisión es una devolución de la red. No habla en nombre de ninguna casa de estudios.</p>
+            <p class="disclaimer-title">Es mentoría entre pares de la red.</p>
+            <p>No reemplaza el aval ni la certificación oficial de ninguna universidad.</p>
           </div>
         </div>
-        <div class="wrap around">
-          <h3 class="around-title">Alrededor de esa revisión</h3>
-          <dl class="around-list">
-            <div>
-              <dt>JADAI Colabora</dt>
-              <dd>En eventos de otras comunidades, como aliado comunitario: personas, mentoría o difusión. No dinero ni auspicio.</dd>
-            </div>
-            <div>
-              <dt>JADAI Embajadores</dt>
-              <dd>Buscamos una persona por universidad, que traiga proyectos y docentes. Esa red todavía no está formada.</dd>
-            </div>
-            <div>
-              <dt>JADAI Eventos</dt>
-              <dd>Los eventos propios, para mostrar proyectos ya revisados, todavía no están en marcha.</dd>
-            </div>
-            <div>
-              <dt>JADAI Alianzas</dt>
-              <dd>La dirección es abrir puertas en universidades, la Alcaldía, la Gobernación y empresas. Aún no hay convenios firmados.</dd>
-            </div>
-          </dl>
-          <p class="limits"><strong>Aportamos</strong> personas, revisión, difusión y conexiones. <strong>No aportamos</strong> dinero, premios, espacios, cursos, becas, investigación propia ni avales de una universidad.</p>
+
+        <div class="wrap example-wrap">
+          <aside class="example" aria-label="Ejemplo ilustrativo, proyecto ficticio">
+            <p class="badge badge-line">Ejemplo ilustrativo · proyecto ficticio</p>
+            <p>Una app que reconoce hojas de un cultivo. No es un proyecto de la red.</p>
+            <p>Devolución: el problema se entiende. Falta decir de dónde salen las fotos y quién revisa un error. Siguiente paso: un solo cultivo y una fuente de datos.</p>
+          </aside>
         </div>
       </section>
 
-      <section class="block band" id="fundadores" aria-labelledby="fundadores-titulo">
+      <section class="block band" id="hacemos" aria-labelledby="hacemos-titulo">
+        <div class="wrap">
+          <p class="kicker">La red</p>
+          <h2 id="hacemos-titulo">Qué hacemos</h2>
+          <p class="lede">Conecta es el núcleo. Lo demás acompaña esa revisión.</p>
+          <div class="pillars">
+            <article class="pillar pillar-main">
+              <p class="badge">Abierto</p>
+              <h3>JADAI Conecta</h3>
+              <p>Recibimos tu idea y la conectamos con quien puede revisarla.</p>
+            </article>
+            <article class="pillar">
+              <p class="badge">Abierto a invitaciones</p>
+              <h3>JADAI Colabora</h3>
+              <p>Cuando otra comunidad invita: personas, mentoría o difusión. Sin dinero ni auspicio.</p>
+            </article>
+            <article class="pillar">
+              <p class="badge">Convocatoria abierta</p>
+              <h3>JADAI Embajadores</h3>
+              <p>Una persona por universidad, para traer proyectos y docentes.</p>
+            </article>
+            <article class="pillar">
+              <p class="badge badge-line">Próximamente · Fase 2</p>
+              <h3>JADAI Eventos</h3>
+              <p>Un espacio propio para mostrar los proyectos que pasen por la revisión.</p>
+            </article>
+            <article class="pillar">
+              <p class="badge badge-line">Primeros aliados</p>
+              <h3>JADAI Alianzas</h3>
+              <p>La invitación está abierta a universidades, la Alcaldía, la Gobernación y empresas.</p>
+            </article>
+          </div>
+
+          <div class="compare">
+            <div>
+              <h3>Lo que JADAI aporta</h3>
+              <ul class="yes">
+                <li>Personas y voluntariado</li>
+                <li>Docentes, mentoría y jurados</li>
+                <li>Difusión en las universidades</li>
+                <li>Conexiones</li>
+              </ul>
+            </div>
+            <div>
+              <h3>Lo que JADAI no es</h3>
+              <ul class="no">
+                <li>Financiamiento, premios o becas</li>
+                <li>Patrocinador</li>
+                <li>Certificado o aval oficial</li>
+                <li>Escuela o laboratorio</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="block" id="fundadores" aria-labelledby="fundadores-titulo">
         <div class="wrap">
           <p class="kicker">Quiénes la iniciaron</p>
           <h2 id="fundadores-titulo">Fundadores</h2>
+          <!-- Foto: data-foto="assets/fotos/nombre.jpg" en .avatar. Vacío = iniciales.
+               LinkedIn: CONTACT.linkedinMiguel y CONTACT.linkedinJazid en js/main.js. -->
           <div class="founders">
-            <article>
+            <article class="founder-card">
+              <div class="avatar" data-foto="" aria-hidden="true"><span>MV</span></div>
               <h3>Miguel Angel Vega Moreno</h3>
               <p>Licenciatura en Innovación Digital e Inteligencia Artificial</p>
-              <p class="quiet">Universidad Central de Bolivia (UNICEN)</p>
+              <p class="quiet">Universidad Central de Bolivia</p>
+              <p class="meta">
+                <span class="tag">UNICEN</span>
+                <span class="place">Santa Cruz</span>
+              </p>
+              <ul class="socials">
+                <li data-contact="linkedinMiguel" hidden>
+                  <a rel="noopener noreferrer" target="_blank" aria-label="LinkedIn de Miguel Angel Vega Moreno">
+                    <svg viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45zM22.23 0H1.77A1.75 1.75 0 0 0 0 1.73v20.54A1.75 1.75 0 0 0 1.77 24h20.46A1.76 1.76 0 0 0 24 22.27V1.73A1.76 1.76 0 0 0 22.23 0z"/></svg>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://github.com/vegamorenomiguelangel1-pixel" rel="noopener noreferrer" target="_blank" aria-label="GitHub de Miguel Angel Vega Moreno">
+                    <svg viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><path d="M12 2C6.48 2 2 6.58 2 12.26c0 4.52 2.87 8.35 6.84 9.7.5.1.68-.22.68-.49 0-.24-.01-.87-.01-1.71-2.78.62-3.37-1.37-3.37-1.37-.45-1.18-1.11-1.5-1.11-1.5-.91-.64.07-.63.07-.63 1 .07 1.53 1.06 1.53 1.06.9 1.57 2.36 1.12 2.94.86.09-.67.35-1.12.63-1.38-2.22-.26-4.56-1.14-4.56-5.07 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.32.1-2.75 0 0 .84-.27 2.75 1.05A9.3 9.3 0 0 1 12 6.84c.85 0 1.7.12 2.5.34 1.9-1.32 2.74-1.05 2.74-1.05.55 1.43.2 2.49.1 2.75.64.72 1.03 1.63 1.03 2.75 0 3.94-2.34 4.8-4.57 5.06.36.32.68.94.68 1.9 0 1.37-.01 2.47-.01 2.81 0 .27.18.6.69.49A10.04 10.04 0 0 0 22 12.26C22 6.58 17.52 2 12 2z"/></svg>
+                  </a>
+                </li>
+              </ul>
             </article>
-            <article>
+            <article class="founder-card">
+              <div class="avatar" data-foto="" aria-hidden="true"><span>JO</span></div>
               <h3>Jazid Andrey Ovando Durán</h3>
               <p>Ingeniería en Inteligencia Artificial</p>
-              <p class="quiet">Universidad Católica Boliviana (UCB)</p>
+              <p class="quiet">Universidad Católica Boliviana</p>
+              <p class="meta">
+                <span class="tag">UCB</span>
+                <span class="place">Santa Cruz</span>
+              </p>
+              <ul class="socials">
+                <li data-contact="linkedinJazid" hidden>
+                  <a rel="noopener noreferrer" target="_blank" aria-label="LinkedIn de Jazid Andrey Ovando Durán">
+                    <svg viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45zM22.23 0H1.77A1.75 1.75 0 0 0 0 1.73v20.54A1.75 1.75 0 0 0 1.77 24h20.46A1.76 1.76 0 0 0 24 22.27V1.73A1.76 1.76 0 0 0 22.23 0z"/></svg>
+                  </a>
+                </li>
+                <li data-contact="githubJazid" hidden>
+                  <a rel="noopener noreferrer" target="_blank" aria-label="GitHub de Jazid Andrey Ovando Durán">
+                    <svg viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><path d="M12 2C6.48 2 2 6.58 2 12.26c0 4.52 2.87 8.35 6.84 9.7.5.1.68-.22.68-.49 0-.24-.01-.87-.01-1.71-2.78.62-3.37-1.37-3.37-1.37-.45-1.18-1.11-1.5-1.11-1.5-.91-.64.07-.63.07-.63 1 .07 1.53 1.06 1.53 1.06.9 1.57 2.36 1.12 2.94.86.09-.67.35-1.12.63-1.38-2.22-.26-4.56-1.14-4.56-5.07 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.32.1-2.75 0 0 .84-.27 2.75 1.05A9.3 9.3 0 0 1 12 6.84c.85 0 1.7.12 2.5.34 1.9-1.32 2.74-1.05 2.74-1.05.55 1.43.2 2.49.1 2.75.64.72 1.03 1.63 1.03 2.75 0 3.94-2.34 4.8-4.57 5.06.36.32.68.94.68 1.9 0 1.37-.01 2.47-.01 2.81 0 .27.18.6.69.49A10.04 10.04 0 0 0 22 12.26C22 6.58 17.52 2 12 2z"/></svg>
+                  </a>
+                </li>
+              </ul>
             </article>
           </div>
         </div>
       </section>
 
-      <section class="block" id="unete" aria-labelledby="unete-titulo">
+      <section class="block band" id="unete" aria-labelledby="unete-titulo">
         <div class="wrap">
           <p class="kicker">Participa</p>
           <h2 id="unete-titulo">Únete</h2>
@@ -161,61 +299,54 @@
           <div class="roles">
             <article>
               <h3>Estudiante</h3>
-              <p>Cualquier universidad y cualquier nivel. No hace falta ser experto.</p>
-              <a href="#proponer">Propón tu proyecto</a>
+              <p>Cualquier universidad y cualquier nivel.</p>
+              <a href="#proyecto" data-rol="proyecto">Validar proyecto</a>
             </article>
             <article>
               <h3>Docente</h3>
-              <p>Criterio académico, unas horas al mes. Sin docentes no hay validación.</p>
-              <a href="#proponer">Quiero revisar</a>
+              <p>Sé parte del comité fundador de revisores.</p>
+              <a href="#docente" data-rol="docente">Quiero revisar</a>
             </article>
             <article>
               <h3>Embajador</h3>
-              <p>La cara de la red en tu campus. Todavía no hay una persona por universidad.</p>
-              <a href="#proponer">Quiero ser embajador</a>
+              <p>La cara de la red en tu campus.</p>
+              <a href="#embajador" data-rol="embajador">Quiero ser embajador</a>
             </article>
             <article>
               <h3>Aliado</h3>
-              <p>Profesionales, instituciones u otras comunidades. Nada firmado todavía.</p>
-              <a href="#proponer">Conversemos</a>
+              <p>Profesionales, instituciones u otras comunidades.</p>
+              <a href="#aliado" data-rol="aliado">Conversemos</a>
             </article>
           </div>
         </div>
       </section>
 
-      <section class="block band" id="proponer" aria-labelledby="contacto">
-        <div class="wrap contact-grid">
-          <div>
-            <p class="kicker">Contacto</p>
-            <h2 id="contacto">Propón tu proyecto</h2>
-            <p class="lede">Escribe tu idea o cómo quieres sumarte. El correo todavía no está definido: copia el borrador y guárdalo.</p>
-            <h3>Datos de contacto</h3>
-            <p class="note">Cada campo dice «Por completar» a propósito. Cuando exista el dato, se reemplaza. Si una red no se va a usar, se borra la fila.</p>
-            <!-- Por completar: sustituir «Por completar» por el dato real. No inventar URLs. -->
-            <dl class="placeholders">
-              <div>
-                <dt>Correo electrónico</dt>
-                <dd><span class="pending">Por completar</span></dd>
-              </div>
-              <div>
-                <dt>Instagram</dt>
-                <dd><span class="pending">Por completar</span></dd>
-              </div>
-              <div>
-                <dt>LinkedIn</dt>
-                <dd><span class="pending">Por completar</span></dd>
-              </div>
-              <div>
-                <dt>WhatsApp</dt>
-                <dd><span class="pending">Por completar</span></dd>
-              </div>
-            </dl>
+      <section class="block" id="proponer" aria-labelledby="contacto">
+        <span id="proyecto" class="anchor"></span>
+        <span id="docente" class="anchor"></span>
+        <span id="embajador" class="anchor"></span>
+        <span id="aliado" class="anchor"></span>
+        <div class="wrap contact">
+          <p class="kicker">Contacto</p>
+          <h2 id="contacto">Escríbenos</h2>
+          <p class="lede">Elige tu rol y ajusta el mensaje.</p>
+          <!-- Canales: objeto CONTACT al inicio de js/main.js. Vacío = no se muestra. -->
+          <div id="canales-bloque" hidden>
+            <h3>Canales</h3>
+            <ul id="canales" class="channels"></ul>
           </div>
-          <div class="draft">
-            <label for="plantilla">Borrador para copiar</label>
-            <textarea id="plantilla" readonly>Hola.
+          <div class="role-tabs">
+            <div role="tablist" aria-label="Cómo quieres sumarte">
+              <button type="button" role="tab" id="tab-proyecto" data-rol="proyecto" aria-controls="panel-rol" aria-selected="true" tabindex="0">Validar proyecto</button>
+              <button type="button" role="tab" id="tab-docente" data-rol="docente" aria-controls="panel-rol" aria-selected="false" tabindex="-1">Docente</button>
+              <button type="button" role="tab" id="tab-embajador" data-rol="embajador" aria-controls="panel-rol" aria-selected="false" tabindex="-1">Embajador</button>
+              <button type="button" role="tab" id="tab-aliado" data-rol="aliado" aria-controls="panel-rol" aria-selected="false" tabindex="-1">Aliado</button>
+            </div>
+            <div role="tabpanel" id="panel-rol" aria-labelledby="tab-proyecto">
+              <label for="plantilla">Mensaje</label>
+              <textarea id="plantilla" spellcheck="true">Hola.
 
-Quiero proponer un proyecto de IA, o sumarme como docente, embajador o aliado.
+Quiero proponer un proyecto de IA para que la red lo revise.
 
 Nombre:
 Universidad:
@@ -225,8 +356,11 @@ Problema y para quién es:
 Método:
 Datos y recursos:
 Uso ético de la IA:</textarea>
-            <button class="btn" type="button" id="copiar">Copiar texto</button>
-            <p id="copiar-estado" role="status" aria-live="polite"></p>
+              <div class="draft-actions" id="acciones-mensaje">
+                <button class="btn" type="button" id="copiar">Copiar mensaje</button>
+              </div>
+              <p id="copiar-estado" role="status" aria-live="polite"></p>
+            </div>
           </div>
         </div>
       </section>
@@ -234,12 +368,15 @@ Uso ético de la IA:</textarea>
 
     <footer class="site-footer">
       <div class="wrap footer-row">
-        <img src="assets/logo-con-texto.png" width="1200" height="1200" alt="JADAI">
+        <div class="logo-chip">
+          <img src="assets/logo-con-texto.png" width="1200" height="1200" alt="JADAI">
+        </div>
         <div>
           <p>Santa Cruz de la Sierra, Bolivia</p>
-          <p>Etapa inicial, sin personería jurídica.</p>
+          <p>Comunidad en etapa inicial, sin personería jurídica.</p>
           <ul>
             <li><a href="#como">Cómo funciona</a></li>
+            <li><a href="#hacemos">Qué hacemos</a></li>
             <li><a href="#fundadores">Fundadores</a></li>
             <li><a href="#unete">Únete</a></li>
             <li><a href="#proponer">Contacto</a></li>

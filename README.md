@@ -32,12 +32,27 @@ Si más adelante usan un dominio propio, actualicen en `index.html` las etiqueta
 
 ## Qué está por completar
 
-No inventes estos datos: el sitio los deja marcados a propósito.
+No inventes estos datos. Edita el objeto `CONTACT` al inicio de `js/main.js`. Si un campo queda vacío (`""`), el sitio no lo muestra.
 
-- **Correo, Instagram, LinkedIn y WhatsApp** en la sección «Propón tu proyecto». Cada uno dice «Por completar». Sustituye ese texto por el dato real o borra la fila si esa red no se va a usar.
-- El **año 2030** de la visión está marcado como «Por confirmar». No es un compromiso.
-- JADAI **aún no tiene personería jurídica** y está en etapa inicial. El sitio lo dice.
-- **No hay alianzas firmadas**, eventos propios realizados ni formulario en línea. No agregues logos de socios, testimonios ni cifras de miembros hasta que existan.
+```js
+var CONTACT = {
+  email: "",
+  whatsapp: "",       // solo dígitos, con código de país
+  instagram: "",      // URL https://…
+  linkedin: "",       // URL de la red, no de una persona
+  linkedinMiguel: "",
+  linkedinJazid: "",
+  githubJazid: ""
+};
+```
+
+- Con `email` aparece el canal y el botón «Abrir en mi correo».
+- Con `whatsapp` aparece el canal y el botón «WhatsApp».
+- Sin ningún canal, solo queda «Copiar mensaje».
+- El GitHub de Miguel ya está en Fundadores: `https://github.com/vegamorenomiguelangel1-pixel`.
+- Foto de un fundador: atributo `data-foto` en su `.avatar`. Vacío = iniciales.
+- JADAI está en etapa inicial y sin personería jurídica. El pie lo dice una vez.
+- No agregues logos de socios, testimonios, cifras, eventos realizados ni alianzas firmadas hasta que existan.
 
 ## Marca
 
