@@ -36,7 +36,7 @@ No inventes estos datos. Edita el objeto `CONTACT` al inicio de `js/main.js`. Si
 
 ```js
 var CONTACT = {
-  email: "",
+  email: "jadai.bolivia@gmail.com",
   whatsapp: "",       // solo dígitos, con código de país
   instagram: "",      // URL https://…
   linkedin: "",       // URL de la red, no de una persona
@@ -46,9 +46,9 @@ var CONTACT = {
 };
 ```
 
-- Con `email` aparece el canal y el botón «Abrir en mi correo».
-- Con `whatsapp` aparece el canal y el botón «WhatsApp».
-- Sin ningún canal, solo queda «Copiar mensaje».
+- El correo oficial ya está en `email`. Se muestra en Escríbenos y en el pie, y abre «Abrir en mi correo» con el asunto y el mensaje del rol.
+- WhatsApp, Instagram y LinkedIn siguen vacíos: no se muestran.
+- Con `whatsapp` aparecería el canal y el botón «WhatsApp».
 - El GitHub de Miguel ya está en Fundadores: `https://github.com/vegamorenomiguelangel1-pixel`.
 - Foto de un fundador: atributo `data-foto` en su `.avatar`. Vacío = iniciales.
 - JADAI está en etapa inicial y sin personería jurídica. El pie lo dice una vez.

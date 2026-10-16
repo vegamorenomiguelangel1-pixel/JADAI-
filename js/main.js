@@ -5,7 +5,7 @@
    instagram y linkedin: URL completa, https://…
    El GitHub de Miguel está en el HTML de Fundadores. */
 var CONTACT = {
-  email: "",
+  email: "jadai.bolivia@gmail.com",
   whatsapp: "",
   instagram: "",
   linkedin: "",
@@ -329,6 +329,15 @@ var CONTACT = {
         channels.push({ name: pair[1], href: url, text: pair[1] });
       }
     });
+
+    var footerMail = document.querySelector("#correo-pie");
+    if (footerMail && email && email.indexOf("@") !== -1 && email.indexOf(" ") === -1) {
+      var footerLink = document.createElement("a");
+      footerLink.href = "mailto:" + email;
+      footerLink.textContent = email;
+      footerMail.appendChild(footerLink);
+      footerMail.hidden = false;
+    }
 
     if (channels.length) {
       channels.forEach(function (channel) {
