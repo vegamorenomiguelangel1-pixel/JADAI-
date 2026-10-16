@@ -1,12 +1,12 @@
 /* Contacto y enlaces.
    Completa solo con datos reales. Una cadena vacía oculta ese canal o botón.
    No inventes correos, números ni URLs.
-   whatsapp: solo dígitos, con código de país (ejemplo: 59170000000).
+   whatsapp: solo dígitos, con código de país, sin + ni espacios.
    instagram y linkedin: URL completa, https://…
    El GitHub de Miguel está en el HTML de Fundadores. */
 var CONTACT = {
   email: "jadai.bolivia@gmail.com",
-  whatsapp: "",
+  whatsapp: "59172673684",
   instagram: "",
   linkedin: "",
   linkedinMiguel: "",
@@ -138,6 +138,11 @@ var CONTACT = {
 
   function clean(value) {
     return String(value || "").trim();
+  }
+
+  function formatPhone(digits) {
+    if (/^591\d{8}$/.test(digits)) return "+591 " + digits.slice(3);
+    return "+" + digits;
   }
 
   function selectRole(role) {
@@ -317,7 +322,7 @@ var CONTACT = {
       channels.push({
         name: "WhatsApp",
         href: "https://wa.me/" + waDigits,
-        text: "WhatsApp"
+        text: formatPhone(waDigits)
       });
     }
     [
@@ -337,6 +342,17 @@ var CONTACT = {
       footerLink.textContent = email;
       footerMail.appendChild(footerLink);
       footerMail.hidden = false;
+    }
+
+    var footerWa = document.querySelector("#whatsapp-pie");
+    if (footerWa && waDigits) {
+      var footerWaLink = document.createElement("a");
+      footerWaLink.href = "https://wa.me/" + waDigits;
+      footerWaLink.target = "_blank";
+      footerWaLink.rel = "noopener noreferrer";
+      footerWaLink.textContent = formatPhone(waDigits);
+      footerWa.appendChild(footerWaLink);
+      footerWa.hidden = false;
     }
 
     if (channels.length) {
