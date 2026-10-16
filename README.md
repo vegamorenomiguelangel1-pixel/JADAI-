@@ -32,23 +32,36 @@ Si más adelante usan un dominio propio, actualicen en `index.html` las etiqueta
 
 ## Qué está por completar
 
-No inventes estos datos: el sitio los deja marcados a propósito.
+No inventes estos datos. Edita el objeto `CONTACT` al inicio de `js/main.js`. Si un campo queda vacío (`""`), el sitio no lo muestra.
 
-- **Correo, Instagram, LinkedIn y WhatsApp** en la sección «Propón tu proyecto». Cada uno dice «Por completar». Sustituye ese texto por el dato real o borra la fila si esa red no se va a usar.
-- El **año 2030** de la visión está marcado como «Por confirmar». No es un compromiso.
-- JADAI **aún no tiene personería jurídica** y está en etapa inicial. El sitio lo dice.
-- **No hay alianzas firmadas**, eventos propios realizados ni formulario en línea. No agregues logos de socios, testimonios ni cifras de miembros hasta que existan.
+```js
+var CONTACT = {
+  email: "jadai.bolivia@gmail.com",
+  whatsapp: "59172673684",
+  instagram: "",      // URL https://…
+  linkedin: "",       // URL de la red, no de una persona
+  linkedinMiguel: "",
+  linkedinJazid: "",
+  githubJazid: ""
+};
+```
 
-## Marca y tipografía
+- El correo oficial ya está en `email`. Se muestra en Escríbenos y en el pie, y abre «Abrir en mi correo» con el asunto y el mensaje del rol.
+- El WhatsApp oficial ya está en `whatsapp` (`59172673684`). Se muestra en los mismos lugares y abre `https://wa.me/59172673684` con el mensaje del rol.
+- Instagram y LinkedIn siguen vacíos: no se muestran.
+- El GitHub de Miguel ya está en Fundadores: `https://github.com/vegamorenomiguelangel1-pixel`.
+- Foto de un fundador: atributo `data-foto` en su `.avatar`. Vacío = iniciales.
+- JADAI está en etapa inicial y sin personería jurídica. El pie lo dice una vez.
+- No agregues logos de socios, testimonios, cifras, eventos realizados ni alianzas firmadas hasta que existan.
 
-Los archivos de la marca están en `assets/`:
+## Marca
 
-- `logo-con-texto.svg` / `.png` — marca con la palabra JADAI, para fondo claro.
-- `logo-sin-texto.svg` / `.png` — la marca sola, para fondo claro.
-- `logo-punto-verde.svg` / `.png` — el punto verde, para acentos.
-- `logo-*-sobre-negro.svg` — la misma marca en blanco, para fondo negro.
-- `favicon.svg`, `favicon.ico` y la imagen Open Graph `assets/og.png`.
+El nombre, cuando es marca, usa los archivos originales sin redibujarlos:
 
-Colores: negro `#0C0C0C`, blanco y verde `#2A9279`. Para texto pequeño sobre blanco se usa un verde más oscuro (`#145C4C`) porque el verde de marca no alcanza contraste.
+- `assets/logo-con-texto.png` — marca con la palabra JADAI.
+- `assets/logo-sin-texto.png` — la marca sola.
+- `assets/logo-punto-verde.png` — el punto verde.
 
-Las fuentes (Fraunces y Source Sans 3, licencia SIL Open Font License) están en `assets/fonts/`.
+Colores: negro `#0C0C0C`, blanco y verde `#2A9279`. El texto pequeño sobre blanco usa `#145C4C`, el mismo verde más oscuro, para que se pueda leer.
+
+La tipografía del sitio es Outfit (SIL Open Font License), una sans geométrica fina, alineada con el letrero del logo. El nombre no se vuelve a componer en otra fuente: donde hace de logo, va la imagen.
