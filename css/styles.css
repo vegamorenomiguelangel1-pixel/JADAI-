@@ -1488,7 +1488,28 @@ textarea {
   margin: 0.35rem 0 0;
 }
 
+.firma-contacto + .firma-contacto {
+  margin-top: 0.05rem;
+}
+
 .firma-contacto a {
+  overflow-wrap: anywhere;
+}
+
+.contacto-general {
+  margin: 1.75rem 0 0;
+  padding-top: 1.15rem;
+  border-top: 1px solid var(--line);
+  max-width: 36rem;
+}
+
+.contacto-general-label {
+  display: block;
+  margin-bottom: 0.2rem;
+  font-weight: 600;
+}
+
+.contacto-general a {
   overflow-wrap: anywhere;
 }
 
