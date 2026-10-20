@@ -1479,10 +1479,17 @@ textarea {
   line-height: 1.2;
 }
 
-.firma-ci,
 .firma-rol {
   margin: 0.15rem 0 0;
   color: var(--quiet);
+}
+
+.firma-contacto {
+  margin: 0.35rem 0 0;
+}
+
+.firma-contacto a {
+  overflow-wrap: anywhere;
 }
 
 @media (min-width: 720px) {
