@@ -1479,6 +1479,7 @@ textarea {
   line-height: 1.2;
 }
 
+.firma-ci,
 .firma-rol {
   margin: 0.15rem 0 0;
   color: var(--quiet);
