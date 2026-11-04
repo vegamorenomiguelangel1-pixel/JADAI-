@@ -1,10 +1,6 @@
-# JADAI
+# Sitio de la comunidad
 
-Sitio oficial de **JADAI** (Joint Academic Development in Artificial Intelligence / Desarrollo Académico Conjunto en Inteligencia Artificial), comunidad estudiantil sin fines de lucro de Santa Cruz de la Sierra, Bolivia.
-
-La frase del sitio es: «Tu idea de IA, validada en conjunto.»
-
-Es un sitio estático: HTML, CSS y un poco de JavaScript. No hay paso de compilación ni dependencias.
+Sitio estático oficial (HTML, CSS y JavaScript). No hay paso de compilación ni dependencias. La frase pública es: «Potenciando el talento boliviano».
 
 ## Verlo en local
 
@@ -30,25 +26,30 @@ El repositorio se llama `JADAI-` (con guion al final): esa ruta forma parte de l
 
 Si más adelante usan un dominio propio, actualicen en `index.html` las etiquetas `canonical`, `og:url` y `og:image` para que apunten a la URL absoluta nueva.
 
-## Qué está por completar
+## Contacto y redes (solo datos oficiales)
 
-No inventes estos datos: el sitio los deja marcados a propósito.
+- Instagram: <https://www.instagram.com/jadai.bolivia/>
+- Facebook: <https://www.facebook.com/share/1EzJkhTDfF/>
+- LinkedIn: <https://www.linkedin.com/company/jadai-bo/>
+- X: <https://x.com/jadai_bolivia>
+- TikTok: <https://www.tiktok.com/@jadai_bolivia>
+- Correo: jadai.bolivia@gmail.com
+- WhatsApp: <https://wa.me/59172673684>
+- Grupo de WhatsApp: <https://chat.whatsapp.com/KNrKSTzLwH68PcHUtKXGtx>
+- Formulario de líderes estudiantiles y CALL FOR MENTORS: enlaces en `#unete`
 
-- **Correo, Instagram, LinkedIn y WhatsApp** en la sección «Propón tu proyecto». Cada uno dice «Por completar». Sustituye ese texto por el dato real o borra la fila si esa red no se va a usar.
-- El **año 2030** de la visión está marcado como «Por confirmar». No es un compromiso.
-- JADAI **aún no tiene personería jurídica** y está en etapa inicial. El sitio lo dice.
-- **No hay alianzas firmadas**, eventos propios realizados ni formulario en línea. No agregues logos de socios, testimonios ni cifras de miembros hasta que existan.
+No agregues métricas, teléfonos o correos personales, ni alianzas como firmadas. UNICEN y UCB están en proceso. No menciones UPB.
 
 ## Marca y tipografía
 
 Los archivos de la marca están en `assets/`:
 
-- `logo-con-texto.svg` / `.png` — marca con la palabra JADAI, para fondo claro.
+- `logo-con-texto.svg` / `.png` — marca con wordmark, para fondo claro.
 - `logo-sin-texto.svg` / `.png` — la marca sola, para fondo claro.
 - `logo-punto-verde.svg` / `.png` — el punto verde, para acentos.
 - `logo-*-sobre-negro.svg` — la misma marca en blanco, para fondo negro.
 - `favicon.svg`, `favicon.ico` y la imagen Open Graph `assets/og.png`.
 
-Colores: negro `#0C0C0C`, blanco y verde `#2A9279`. Para texto pequeño sobre blanco se usa un verde más oscuro (`#145C4C`) porque el verde de marca no alcanza contraste.
+Colores: negro `#0C0C0C`, blanco `#FFFFFF`, papel `#F4F4F4`, teal `#2A9279` y `#449582`, oscuro `#102822`.
 
-Las fuentes (Fraunces y Source Sans 3, licencia SIL Open Font License) están en `assets/fonts/`.
+La fuente del hub es Outfit (SIL Open Font License), en `assets/fonts/`. El reglamento conserva Fraunces en títulos de documento.

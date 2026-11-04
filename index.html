@@ -3,43 +3,45 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="color-scheme" content="light">
-    <meta name="theme-color" content="#ffffff">
-    <title>JADAI — Tu idea de IA, validada en conjunto.</title>
-    <meta name="description" content="Red de estudiantes y docentes de universidades de Bolivia que validan proyectos de IA. Comunidad estudiantil sin fines de lucro en Santa Cruz de la Sierra.">
+    <meta name="color-scheme" content="dark light">
+    <meta name="theme-color" content="#0C0C0C">
+    <title>Potenciando el talento boliviano</title>
+    <meta name="description" content="Comunidad estudiantil, académica y colaborativa en toda Bolivia. Conectamos a estudiantes con docentes, profesionales e instituciones para validar y potenciar proyectos de investigación.">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://vegamorenomiguelangel1-pixel.github.io/JADAI-/">
-    <!-- Por completar: si el sitio usa un dominio propio, cambia canonical, og:url y og:image a esa URL absoluta. -->
     <meta property="og:type" content="website">
     <meta property="og:locale" content="es_BO">
     <meta property="og:site_name" content="JADAI">
-    <meta property="og:title" content="JADAI — Tu idea de IA, validada en conjunto.">
-    <meta property="og:description" content="Red de estudiantes y docentes de universidades de Bolivia que validan proyectos de IA. Comunidad estudiantil sin fines de lucro en Santa Cruz de la Sierra.">
+    <meta property="og:title" content="Potenciando el talento boliviano">
+    <meta property="og:description" content="Comunidad estudiantil en toda Bolivia. Conectamos a estudiantes con docentes, profesionales e instituciones para que sus ideas y proyectos de investigación se validen, crezcan y lleguen a potenciarse.">
     <meta property="og:url" content="https://vegamorenomiguelangel1-pixel.github.io/JADAI-/">
     <meta property="og:image" content="https://vegamorenomiguelangel1-pixel.github.io/JADAI-/assets/og.png">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
-    <meta property="og:image:alt" content="Marca de JADAI: un círculo con un triángulo, dos puntos en la base y un punto verde en la cima. Tu idea de IA, validada en conjunto.">
+    <meta property="og:image:alt" content="Marca: un círculo con un triángulo, dos puntos en la base y un punto verde en la cima. Potenciando el talento boliviano.">
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="JADAI — Tu idea de IA, validada en conjunto.">
-    <meta name="twitter:description" content="Red de estudiantes y docentes de universidades de Bolivia que validan proyectos de IA. Comunidad estudiantil sin fines de lucro en Santa Cruz de la Sierra.">
+    <meta name="twitter:site" content="@jadai_bolivia">
+    <meta name="twitter:title" content="Potenciando el talento boliviano">
+    <meta name="twitter:description" content="Comunidad estudiantil en toda Bolivia. Conectamos a estudiantes con docentes, profesionales e instituciones para potenciar la investigación.">
     <meta name="twitter:image" content="https://vegamorenomiguelangel1-pixel.github.io/JADAI-/assets/og.png">
     <link rel="icon" href="favicon.ico" sizes="any">
     <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
     <link rel="icon" href="assets/favicon-32.png" type="image/png" sizes="32x32">
     <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
     <link rel="manifest" href="site.webmanifest">
-    <link rel="preload" href="assets/fonts/fraunces-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="preload" href="assets/fonts/source-sans-3-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="assets/fonts/outfit-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="assets/fonts/outfit-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="stylesheet" href="css/styles.css">
+    <script>if (!window.matchMedia("(prefers-reduced-motion: reduce)").matches) document.documentElement.classList.add("can-reveal");</script>
+    <noscript><style>.hub .reveal{opacity:1;transform:none}</style></noscript>
   </head>
-  <body>
+  <body class="hub">
+    <canvas id="marca-fondo" class="marca-fondo" aria-hidden="true"></canvas>
     <a class="skip" href="#contenido">Saltar al contenido</a>
     <header class="site-header">
       <div class="header-inner wrap">
         <a class="brand" href="#inicio">
-          <img src="assets/logo-sin-texto.svg" alt="" width="40" height="40">
-          <span>JADAI</span>
+          <img src="assets/logo-sin-texto-sobre-negro.svg" alt="Inicio" width="40" height="40">
         </a>
         <input class="nav-check" type="checkbox" id="nav-toggle">
         <label class="nav-toggle" for="nav-toggle">
@@ -48,44 +50,138 @@
         </label>
         <nav id="nav" class="nav-panel" aria-label="Secciones">
           <ul>
-            <li><a href="#que-es">Qué es</a></li>
+            <li><a href="#que-es">Comunidad</a></li>
             <li><a href="#que-hacemos">Qué hacemos</a></li>
             <li><a href="#validacion">Validación</a></li>
             <li><a href="#fundadores">Fundadores</a></li>
             <li><a href="#unete">Únete</a></li>
             <li><a href="reglamento-lideres.html">Reglamento</a></li>
           </ul>
-          <a class="btn btn-primary btn-nav" href="#proponer">Propón tu proyecto</a>
+          <a class="btn btn-primary btn-nav" href="#proponer">Contacto</a>
         </nav>
       </div>
     </header>
 
     <main id="contenido">
       <section class="hero" id="inicio" aria-labelledby="titulo">
+        <div class="hero-glow" aria-hidden="true"></div>
         <div class="wrap hero-grid">
-          <img
-            class="hero-logo"
-            src="assets/logo-sin-texto-sobre-negro.svg"
-            width="480"
-            height="480"
-            alt="Marca de JADAI: círculo con un triángulo, dos puntos en la base y un punto verde en la cima."
-          >
           <div class="hero-copy">
             <p class="kicker">
               <img class="pulse" src="assets/logo-punto-verde.svg" alt="" width="16" height="16">
-              Etapa inicial · Santa Cruz de la Sierra, Bolivia
+              Comunidad estudiantil · En toda Bolivia
             </p>
-            <h1 id="titulo">JADAI</h1>
-            <p class="expansion">
-              <span lang="en">Joint Academic Development in Artificial Intelligence</span>
-              <span>Desarrollo Académico Conjunto en Inteligencia Artificial</span>
-            </p>
-            <p class="tagline">Tu idea de IA,<br> validada en conjunto.</p>
-            <p class="lead">La red de estudiantes y docentes de distintas universidades que se ayudan a validar y hacer crecer proyectos de inteligencia artificial.</p>
+            <h1 id="titulo">
+              <img
+                class="hero-wordmark"
+                src="assets/logo-con-texto-sobre-negro.svg"
+                width="280"
+                height="280"
+                alt="JADAI"
+              >
+            </h1>
+            <p class="tagline">Potenciando el talento boliviano</p>
+            <p class="lead">Conectamos a estudiantes con docentes, profesionales e instituciones para que sus ideas y proyectos de investigación se validen, crezcan y lleguen a potenciarse.</p>
             <div class="hero-actions">
-              <a class="btn btn-primary" href="#proponer">Propón tu proyecto</a>
-              <a class="btn btn-ghost" href="#validacion">Cómo funciona la validación</a>
+              <a class="btn btn-primary" href="#unete">Únete a la comunidad</a>
+              <a class="btn btn-ghost" href="#proponer">Redes y contacto</a>
             </div>
+            <nav class="hero-socials" aria-label="Redes oficiales">
+              <a href="https://www.instagram.com/jadai.bolivia/" target="_blank" rel="noopener noreferrer me" aria-label="Instagram">
+                <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="3.5" y="3.5" width="17" height="17" rx="5"/><circle cx="12" cy="12" r="4.1"/><circle cx="17.2" cy="6.8" r="0.9" fill="currentColor" stroke="none"/></svg>
+              </a>
+              <a href="https://www.facebook.com/share/1EzJkhTDfF/" target="_blank" rel="noopener noreferrer me" aria-label="Facebook">
+                <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true" fill="currentColor"><path d="M14 8.2h2.2V5.4H14c-2.4 0-4 1.5-4 4.1V12H7.8v2.8H10V21h3.2v-6.2h2.3l.5-2.8h-2.8v-2.1c0-.8.3-1.7 1.8-1.7Z"/></svg>
+              </a>
+              <a href="https://www.linkedin.com/company/jadai-bo/" target="_blank" rel="noopener noreferrer me" aria-label="LinkedIn">
+                <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true" fill="currentColor"><path d="M4.4 9.2h2.9V20H4.4V9.2ZM5.85 4.2a1.7 1.7 0 1 1 0 3.4 1.7 1.7 0 0 1 0-3.4ZM10.5 9.2h2.8v1.5c.4-.8 1.5-1.8 3.3-1.8 3.5 0 4.1 2.3 4.1 5.3V20h-2.9v-4.7c0-1.1 0-2.6-1.6-2.6s-1.8 1.2-1.8 2.5V20h-2.9V9.2Z"/></svg>
+              </a>
+              <a href="https://x.com/jadai_bolivia" target="_blank" rel="noopener noreferrer me" aria-label="X">
+                <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true" fill="currentColor"><path d="M13.7 10.4 20.3 3h-1.6l-5.7 6.4L8.4 3H3.5l6.9 10-6.9 7.8h1.6l6-6.8 4.8 6.8h4.9L13.7 10.4Zm-2.1 2.4-.7-1-5.5-7.8h2.4l4.4 6.3.7 1 5.8 8.2h-2.4l-4.7-6.7Z"/></svg>
+              </a>
+              <a href="https://www.tiktok.com/@jadai_bolivia" target="_blank" rel="noopener noreferrer me" aria-label="TikTok">
+                <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true" fill="currentColor"><path d="M14.2 3h2.3c.2 1.8 1.3 3.4 2.9 4.2v2.4c-1.1.1-2.2-.2-3.2-.8v6.3c0 3.2-2.6 5.7-5.9 5.7S4.4 18.3 4.4 15.1c0-3 2.3-5.5 5.3-5.7v2.5c-1.4.2-2.4 1.4-2.4 2.8 0 1.6 1.3 2.9 2.9 2.9s2.9-1.3 2.9-2.9V3Z"/></svg>
+              </a>
+            </nav>
+          </div>
+          <div class="hero-visual" aria-hidden="true">
+            <img
+              class="hero-logo"
+              src="assets/logo-sin-texto-sobre-negro.svg"
+              width="480"
+              height="480"
+              alt=""
+            >
+          </div>
+        </div>
+      </section>
+
+      <section class="hub-dock" id="redes" aria-labelledby="redes-titulo">
+        <div class="wrap">
+          <p class="kicker">Hub</p>
+          <h2 id="redes-titulo">Encuentra a la comunidad</h2>
+          <p class="lede">Redes oficiales, correo, WhatsApp y los formularios para sumarte.</p>
+          <div class="social-grid">
+            <a class="dock-card tilt-card" href="https://www.instagram.com/jadai.bolivia/" target="_blank" rel="noopener noreferrer me">
+              <span class="dock-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="3.5" y="3.5" width="17" height="17" rx="5"/><circle cx="12" cy="12" r="4.1"/><circle cx="17.2" cy="6.8" r="0.9" fill="currentColor" stroke="none"/></svg>
+              </span>
+              <span class="dock-label">Instagram</span>
+              <span class="dock-value">@jadai.bolivia</span>
+            </a>
+            <a class="dock-card tilt-card" href="https://www.facebook.com/share/1EzJkhTDfF/" target="_blank" rel="noopener noreferrer me">
+              <span class="dock-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="28" height="28" fill="currentColor"><path d="M14 8.2h2.2V5.4H14c-2.4 0-4 1.5-4 4.1V12H7.8v2.8H10V21h3.2v-6.2h2.3l.5-2.8h-2.8v-2.1c0-.8.3-1.7 1.8-1.7Z"/></svg>
+              </span>
+              <span class="dock-label">Facebook</span>
+              <span class="dock-value">Página oficial</span>
+            </a>
+            <a class="dock-card tilt-card" href="https://www.linkedin.com/company/jadai-bo/" target="_blank" rel="noopener noreferrer me">
+              <span class="dock-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="28" height="28" fill="currentColor"><path d="M4.4 9.2h2.9V20H4.4V9.2ZM5.85 4.2a1.7 1.7 0 1 1 0 3.4 1.7 1.7 0 0 1 0-3.4ZM10.5 9.2h2.8v1.5c.4-.8 1.5-1.8 3.3-1.8 3.5 0 4.1 2.3 4.1 5.3V20h-2.9v-4.7c0-1.1 0-2.6-1.6-2.6s-1.8 1.2-1.8 2.5V20h-2.9V9.2Z"/></svg>
+              </span>
+              <span class="dock-label">LinkedIn</span>
+              <span class="dock-value">jadai-bo</span>
+            </a>
+            <a class="dock-card tilt-card" href="https://x.com/jadai_bolivia" target="_blank" rel="noopener noreferrer me">
+              <span class="dock-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="28" height="28" fill="currentColor"><path d="M13.7 10.4 20.3 3h-1.6l-5.7 6.4L8.4 3H3.5l6.9 10-6.9 7.8h1.6l6-6.8 4.8 6.8h4.9L13.7 10.4Zm-2.1 2.4-.7-1-5.5-7.8h2.4l4.4 6.3.7 1 5.8 8.2h-2.4l-4.7-6.7Z"/></svg>
+              </span>
+              <span class="dock-label">X</span>
+              <span class="dock-value">@jadai_bolivia</span>
+            </a>
+            <a class="dock-card tilt-card" href="https://www.tiktok.com/@jadai_bolivia" target="_blank" rel="noopener noreferrer me">
+              <span class="dock-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="28" height="28" fill="currentColor"><path d="M14.2 3h2.3c.2 1.8 1.3 3.4 2.9 4.2v2.4c-1.1.1-2.2-.2-3.2-.8v6.3c0 3.2-2.6 5.7-5.9 5.7S4.4 18.3 4.4 15.1c0-3 2.3-5.5 5.3-5.7v2.5c-1.4.2-2.4 1.4-2.4 2.8 0 1.6 1.3 2.9 2.9 2.9s2.9-1.3 2.9-2.9V3Z"/></svg>
+              </span>
+              <span class="dock-label">TikTok</span>
+              <span class="dock-value">@jadai_bolivia</span>
+            </a>
+          </div>
+          <div class="dock-grid">
+            <div class="dock-card tilt-card">
+              <span class="dock-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="3.2" y="5" width="17.6" height="14" rx="2"/><path d="m4 7 8 6 8-6"/></svg>
+              </span>
+              <span class="dock-label">Correo</span>
+              <a class="dock-value" href="mailto:jadai.bolivia@gmail.com">jadai.bolivia@gmail.com</a>
+              <button class="copy-btn" type="button" data-copy="jadai.bolivia@gmail.com" data-ok="Correo copiado" aria-label="Copiar correo">Copiar</button>
+            </div>
+            <div class="dock-card tilt-card">
+              <span class="dock-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M6.5 3.8h3.1l1.2 3.2-1.8 1.8a12 12 0 0 0 5.2 5.2l1.8-1.8 3.2 1.2v3.1c0 .7-.6 1.3-1.3 1.3A15.2 15.2 0 0 1 5.2 5.1c0-.7.6-1.3 1.3-1.3Z"/></svg>
+              </span>
+              <span class="dock-label">WhatsApp</span>
+              <a class="dock-value" href="https://wa.me/59172673684" target="_blank" rel="noopener noreferrer">+591 72673684</a>
+              <button class="copy-btn" type="button" data-copy="+591 72673684" data-ok="Número copiado" aria-label="Copiar teléfono">Copiar</button>
+            </div>
+            <a class="dock-card tilt-card" href="https://chat.whatsapp.com/KNrKSTzLwH68PcHUtKXGtx" target="_blank" rel="noopener noreferrer">
+              <span class="dock-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M7 19.2A8.4 8.4 0 1 1 19.5 13c0 4.4-8.5 7.6-8.5 7.6S9.4 19.8 7 19.2Z"/><path d="M9.2 11.4c.4 2 2 3.6 4 4"/></svg>
+              </span>
+              <span class="dock-label">Grupo de WhatsApp</span>
+              <span class="dock-value">Entra a la conversación de la comunidad</span>
+            </a>
           </div>
         </div>
       </section>
@@ -93,35 +189,30 @@
       <section class="block" id="que-es" aria-labelledby="que-es-titulo">
         <div class="wrap">
           <p class="kicker">Qué es</p>
-          <h2 id="que-es-titulo">Una red entre universidades.</h2>
+          <h2 id="que-es-titulo">Una comunidad en toda Bolivia.</h2>
           <blockquote class="purpose">
-            <p>Que ninguna buena idea de IA en Bolivia se quede sola.</p>
+            <p>Potenciando el talento boliviano.</p>
             <footer>Propósito</footer>
           </blockquote>
-          <div class="prose">
-            <p>JADAI reúne a estudiantes y docentes de distintas universidades para que un proyecto de inteligencia artificial no dependa de una sola carrera ni de una sola persona. Es una comunidad estudiantil, académica y sin fines de lucro. Nace en Santa Cruz de la Sierra y busca llegar al resto de Bolivia.</p>
-            <p>En el nombre, «conjunto» —Joint— es la idea central: se trabaja entre varios, nunca solo.</p>
+          <div class="prose reveal">
+            <p>Somos una comunidad estudiantil, académica y colaborativa, apartidaria y no confesional. Unimos a estudiantes, docentes y profesionales para impulsar la investigación, nuevas startups y el desarrollo con innovación digital.</p>
+            <p>Tenemos domicilio en Santa Cruz de la Sierra y proyección nacional en toda Bolivia. No hay sede física fija: trabajamos de forma virtual y en los espacios que facilitan universidades, sociedades científicas, instituciones aliadas y otras organizaciones. Fundada el 15 de agosto de 2026.</p>
           </div>
           <div class="statements">
-            <article>
+            <article class="tilt-card reveal">
               <h3>Misión</h3>
-              <p>Conectar a estudiantes y docentes de distintas universidades, con profesionales e instituciones, para que las ideas y proyectos de inteligencia artificial se validen con rigor, crezcan y lleguen a la sociedad.</p>
+              <p>Conectamos a estudiantes con docentes, profesionales e instituciones para que sus ideas y proyectos de investigación se validen, crezcan y lleguen a potenciarse.</p>
             </article>
-            <article>
-              <h3>Promesa</h3>
-              <p>Si tienes una idea de IA, te conectamos con quienes pueden ayudarte a validarla y hacerla crecer.</p>
+            <article class="tilt-card reveal">
+              <h3>Visión</h3>
+              <p>Ser la comunidad académica de referencia en Bolivia, uniendo a todas las universidades en un ecosistema que forme talento, genere investigación y abra oportunidades para los jóvenes.</p>
             </article>
-            <article>
-              <h3>A quién sirve primero</h3>
-              <p>A los estudiantes. Docentes, embajadores y aliados hacen posible que la red funcione. Cualquier universidad y cualquier nivel: nadie necesita ser experto para entrar.</p>
+            <article class="tilt-card reveal">
+              <h3>A quién sirve</h3>
+              <p>Estudiantes universitarios de Bolivia, docentes, profesionales, universidades, sociedades científicas, instituciones, empresas y el público en general. Cualquier universidad y cualquier nivel.</p>
             </article>
           </div>
-          <div class="vision">
-            <h3>Visión</h3>
-            <p>Queremos ser, con el tiempo, la red académica de IA de referencia en Bolivia: universidades con carreras de IA unidas en una red de la que salgan talento, investigación y oportunidades para la juventud.</p>
-            <p><span class="chip">Por confirmar</span> El año 2030 se mencionó como horizonte posible. No es una meta comprometida.</p>
-          </div>
-          <p class="stage">JADAI está en una etapa inicial y todavía no tiene personería jurídica. Por eso esta página dice qué hacemos, qué no hacemos y qué aún no existe.</p>
+          <p class="stage reveal">Estamos en etapa inicial y todavía no tenemos personería jurídica. Lo que ves aquí es lo que existe hoy, sin promesas infladas.</p>
         </div>
       </section>
 
@@ -130,25 +221,41 @@
           <p class="kicker">Cómo trabajamos</p>
           <h2 id="valores-titulo">Valores</h2>
           <dl class="values">
-            <div>
-              <dt>Servir primero</dt>
-              <dd>En un evento de otra comunidad, preguntamos qué necesitan antes de pensar en qué ganamos.</dd>
+            <div class="reveal">
+              <dt>Colaboración</dt>
+              <dd>Trabajamos en comunidad y en red con universidades, sociedades científicas y organizaciones aliadas.</dd>
             </div>
-            <div>
-              <dt>Colaborar, no competir</dt>
-              <dd>Tratamos a otras comunidades como aliadas y derivamos lo que no hacemos.</dd>
+            <div class="reveal">
+              <dt>Inclusión y respeto</dt>
+              <dd>Fomentamos un entorno colaborativo, inclusivo y libre de discriminación, acoso o violencia.</dd>
             </div>
-            <div>
-              <dt>Rigor y honestidad</dt>
-              <dd>Validamos con método, decimos qué aportamos y qué no, y no prometemos lo que no tenemos.</dd>
+            <div class="reveal">
+              <dt>Integridad científica y académica</dt>
+              <dd>Actuamos con honestidad académica, respetamos los derechos de autor y citamos las fuentes.</dd>
             </div>
-            <div>
-              <dt>Todas las universidades, todos los niveles</dt>
-              <dd>Cualquier estudiante o docente interesado puede entrar. Nadie necesita ser experto.</dd>
+            <div class="reveal">
+              <dt>Ética y responsabilidad</dt>
+              <dd>Promovemos un desarrollo ético, transparente y responsable, resguardando la privacidad y los datos personales.</dd>
             </div>
-            <div>
-              <dt>IA responsable y con propósito local</dt>
-              <dd>Cuidamos la ética y la integridad académica, y nos importan los problemas de Bolivia.</dd>
+            <div class="reveal">
+              <dt>Transparencia</dt>
+              <dd>Documentamos nuestras decisiones en actas y registramos los apoyos recibidos.</dd>
+            </div>
+            <div class="reveal">
+              <dt>Independencia y neutralidad</dt>
+              <dd>Mantenemos neutralidad político-partidaria y religiosa, y no aceptamos aportes que condicionen nuestra independencia académica.</dd>
+            </div>
+            <div class="reveal">
+              <dt>Responsabilidad y compromiso</dt>
+              <dd>Cumplimos los compromisos asumidos y cuidamos los espacios de las instituciones aliadas.</dd>
+            </div>
+            <div class="reveal">
+              <dt>Vocación de servicio</dt>
+              <dd>Todos los cargos son ad honorem y los recursos se destinan exclusivamente a fines académicos.</dd>
+            </div>
+            <div class="reveal">
+              <dt>Reconocimiento del autor</dt>
+              <dd>La propiedad intelectual de los proyectos pertenece a sus autores.</dd>
             </div>
           </dl>
         </div>
@@ -157,39 +264,38 @@
       <section class="block" id="que-hacemos" aria-labelledby="hacemos-titulo">
         <div class="wrap">
           <p class="kicker">Qué hacemos</p>
-          <h2 id="hacemos-titulo">Un núcleo y cuatro formas de servirlo.</h2>
-          <p class="lede">Cada pilar existe para que la red funcione mejor. Ninguno reemplaza lo que JADAI no es: ni una escuela, ni un laboratorio, ni un patrocinador.</p>
-
-          <article class="nucleus">
-            <p class="num">01 · Núcleo</p>
-            <h3>JADAI Conecta</h3>
-            <p>Es el servicio central: recibe ideas y las conecta con quienes pueden validarlas. La revisión la hacen docentes y pares, y el resultado es una devolución escrita. El formulario en línea y el seguimiento con estados todavía se están armando. Hoy el primer paso es escribirnos.</p>
-          </article>
+          <h2 id="hacemos-titulo">Cinco pilares.</h2>
+          <p class="lede">Cada pilar existe para que la comunidad funcione mejor. No somos una escuela, un laboratorio ni un patrocinador.</p>
 
           <ol class="pillars">
-            <li>
+            <li class="tilt-card reveal">
+              <span class="num" aria-hidden="true">01</span>
+              <h3>Impulso a la investigación</h3>
+              <p>Conectamos a quienes quieren realizar proyectos de investigación con estudiantes y docentes que los ayudan a validar sus ideas.</p>
+            </li>
+            <li class="tilt-card reveal">
               <span class="num" aria-hidden="true">02</span>
-              <h3>JADAI Colabora</h3>
-              <p>Sirve para encontrar proyectos y gente fuera de los círculos propios. En eventos de otras comunidades, JADAI puede participar como aliado comunitario: aporta personas, mentores, jurados y difusión. No es un patrocinador.</p>
+              <h3>Trabajo en comunidad</h3>
+              <p>Apoyamos como staff y coorganizadores en los eventos de otras comunidades, embajadores y organizaciones, y facilitamos los espacios que tenemos a disposición.</p>
             </li>
-            <li>
+            <li class="tilt-card reveal">
               <span class="num" aria-hidden="true">03</span>
-              <h3>JADAI Embajadores</h3>
-              <p>La columna vertebral de una red entre universidades: una cara en cada campus. Buscamos al menos una persona por universidad, que traiga proyectos y docentes y represente a JADAI en su campus.</p>
+              <h3>Divulgación abierta</h3>
+              <p>Organizamos eventos y compartimos los del ecosistema para acercar la innovación y la tecnología al público.</p>
             </li>
-            <li>
+            <li class="tilt-card reveal">
               <span class="num" aria-hidden="true">04</span>
-              <h3>JADAI Eventos</h3>
-              <p>Para acercar la inteligencia artificial al público y, más adelante, mostrar los proyectos que la red ayudó a madurar. Los eventos propios todavía no están en marcha.</p>
+              <h3>Alianzas clave</h3>
+              <p>Buscamos alianzas con universidades, empresas, comunidades, organizaciones, la Alcaldía y la Gobernación, y patrocinios que impulsen las actividades. Universidad Central de Bolivia (UNICEN) y Universidad Católica Boliviana «San Pablo» (UCB): alianzas en proceso.</p>
             </li>
-            <li>
+            <li class="tilt-card reveal">
               <span class="num" aria-hidden="true">05</span>
-              <h3>JADAI Alianzas</h3>
-              <p>Para abrir puertas en universidades, en la Alcaldía, en la Gobernación y en empresas: acuerdos que den acceso a docentes, espacios y reconocimiento. Aún no hay alianzas firmadas. Este pilar describe la dirección, no convenios vigentes.</p>
+              <h3>Proyección estudiantil</h3>
+              <p>Abrimos oportunidades para que nuestros miembros sean líderes y embajadores estudiantiles y se den a conocer.</p>
             </li>
           </ol>
 
-          <div class="limits">
+          <div class="limits reveal">
             <h3>Qué aportamos y qué no</h3>
             <div class="split">
               <div>
@@ -205,14 +311,14 @@
                 <h4>No aportamos</h4>
                 <ul class="plain-list dash-list">
                   <li>Dinero, premios ni espacios propios.</li>
-                  <li>Investigación propia: la hace quien investiga. JADAI conecta y valida.</li>
+                  <li>Investigación propia: la hace quien investiga. La comunidad conecta y valida.</li>
                   <li>Cursos o becas: se derivan a quien los ofrece.</li>
                   <li>Avales oficiales en nombre de una universidad.</li>
                 </ul>
               </div>
             </div>
             <div class="identity-lines">
-              <p><strong>Somos</strong> una comunidad estudiantil, académica y sin fines de lucro. Una red entre universidades, neutral frente a empresas y plataformas, y un aliado comunitario.</p>
+              <p><strong>Somos</strong> una comunidad estudiantil, académica y colaborativa. Una red entre universidades, neutral frente a empresas y plataformas, y un aliado comunitario.</p>
               <p><strong>No somos</strong> un patrocinador, una empresa de eventos, la voz oficial de una universidad, un laboratorio de investigación ni una escuela. No competimos con otras comunidades.</p>
             </div>
           </div>
@@ -222,25 +328,25 @@
       <section class="block" id="validacion" aria-labelledby="validacion-titulo">
         <div class="wrap">
           <p class="kicker">Validación</p>
-          <h2 id="validacion-titulo">Cómo funciona la validación</h2>
-          <p class="lede">Validar un proyecto en JADAI es darle una revisión académica breve y honesta. La hacen al menos un docente y un par de otra universidad. El par es alguien que revisa el trabajo desde fuera de la universidad de origen.</p>
-          <p class="aside">El resultado es una devolución escrita corta, con próximos pasos. Esta es la definición de trabajo con la que arrancamos; se puede afinar. El límite de abajo no se afina: no es un certificado.</p>
+          <h2 id="validacion-titulo">Cómo se impulsan los proyectos</h2>
+          <p class="lede">Postulación con el título, el problema, el objetivo y el perfil de apoyo. La Coordinación General revisa y deriva al Consejo Académico. Se conecta con estudiantes y docentes mentores. Hay seguimiento y difusión, siempre con autorización de los autores.</p>
+          <p class="aside">La propiedad intelectual es de los autores. La comunidad actúa como articuladora. El resultado es una devolución escrita, no un certificado.</p>
           <ol class="questions">
-            <li>
+            <li class="reveal">
               <span class="num" aria-hidden="true">01</span>
               <h3>¿Está claro el problema y para quién es?</h3>
             </li>
-            <li>
+            <li class="reveal">
               <span class="num" aria-hidden="true">02</span>
               <h3>¿El método es adecuado y se puede repetir?</h3>
             </li>
-            <li>
+            <li class="reveal">
               <span class="num" aria-hidden="true">03</span>
               <h3>¿Es viable con los datos y recursos que existen?</h3>
             </li>
-            <li>
+            <li class="reveal">
               <span class="num" aria-hidden="true">04</span>
-              <h3>¿Se usa la IA de forma ética y responsable?</h3>
+              <h3>¿El enfoque es ético y cuida los datos de las personas?</h3>
             </li>
           </ol>
         </div>
@@ -251,34 +357,81 @@
               Límite claro
             </p>
             <p class="disclaimer-title">No es una certificación oficial ni un aval de una universidad.</p>
-            <p>JADAI no certifica proyectos y no habla en nombre de ninguna casa de estudios. La revisión es una devolución de la red, nada más.</p>
+            <p>La comunidad no certifica proyectos y no habla en nombre de ninguna casa de estudios. La revisión es una devolución de la red, nada más.</p>
           </div>
         </div>
       </section>
 
-      <section class="block band" id="fundadores" aria-labelledby="fundadores-titulo">
+      <section class="block band" id="roles" aria-labelledby="roles-titulo">
+        <div class="wrap">
+          <p class="kicker">Quiénes participan</p>
+          <h2 id="roles-titulo">Roles de la comunidad</h2>
+          <div class="roles-grid">
+            <article class="role-card tilt-card reveal">
+              <h3>Coordinación General</h3>
+              <p>Los Miembros Fundadores llevan la gestión diaria, la coordinación de proyectos y eventos, y la relación con aliados, sponsors e instituciones.</p>
+            </article>
+            <article class="role-card tilt-card reveal">
+              <h3>Co-Fundadores</h3>
+              <p>Colaboran con la Coordinación General sin integrarla.</p>
+            </article>
+            <article class="role-card tilt-card reveal">
+              <h3>Consejo Académico</h3>
+              <p>Coordinadores de carrera y profesionales, junto con los Miembros Fundadores. Valida proyectos, avala eventos, asigna docentes mentores y facilita espacios. Participa ad honorem.</p>
+              <ul class="plain-list">
+                <li>Juan Pablo Villazon Richter, coordinador de carrera</li>
+                <li>Gersson Felix Chavarria Choque, coordinador de carrera</li>
+                <li>Elvin Vidal Mollinedo Mencia, profesional</li>
+              </ul>
+            </article>
+            <article class="role-card tilt-card reveal">
+              <h3>Líderes estudiantiles</h3>
+              <p>Quienes lideran a la comunidad en cada universidad.</p>
+            </article>
+            <article class="role-card tilt-card reveal">
+              <h3>Mentores y docentes</h3>
+              <p>Docentes, investigadores y profesionales que acompañan académicamente a la comunidad y a sus proyectos.</p>
+            </article>
+            <article class="role-card tilt-card reveal">
+              <h3>Voluntarios, embajadores y miembros</h3>
+              <p>Voluntarios asumen tareas operativas. Los embajadores estudiantiles representan y difunden en su universidad. Los miembros activos se registran y participan con regularidad. Los sponsors brindan apoyo en especie o patrocinio.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="block" id="fundadores" aria-labelledby="fundadores-titulo">
         <div class="wrap">
           <p class="kicker">Quiénes la iniciaron</p>
           <h2 id="fundadores-titulo">Fundadores</h2>
           <p class="lede">Cuatro fundadores, desde Santa Cruz de la Sierra.</p>
+          <h3 class="founders-label">Coordinación General</h3>
           <div class="founders">
-            <article class="founder">
+            <article class="founder tilt-card reveal">
               <h3>Miguel Angel Vega Moreno</h3>
+              <p class="role-tag">Coordinador General · Miembro Fundador</p>
               <p class="program">Licenciatura en Innovación Digital e Inteligencia Artificial</p>
               <p class="uni">Universidad Central de Bolivia (UNICEN)</p>
             </article>
-            <article class="founder">
+            <article class="founder tilt-card reveal">
               <h3>Jazid Andrey Ovando Durán</h3>
+              <p class="role-tag">Coordinador General · Miembro Fundador</p>
               <p class="program">Ingeniería en Inteligencia Artificial</p>
               <p class="uni">Universidad Católica Boliviana (UCB)</p>
             </article>
-            <article class="founder">
+          </div>
+          <h3 class="founders-label">Co-Fundadores</h3>
+          <p class="aside">Colaboran con la Coordinación General sin integrarla.</p>
+          <div class="founders">
+            <article class="founder tilt-card reveal">
               <h3>Leonardo Duran Cuenca</h3>
+              <p class="role-tag">Co-Fundador</p>
               <p class="program">Ingeniería en Inteligencia Artificial</p>
               <p class="uni">Universidad Católica Boliviana (UCB)</p>
             </article>
-            <article class="founder">
+            <article class="founder tilt-card reveal">
               <h3>Luna Saleth Gallego Martínez</h3>
+              <p class="role-tag">Co-Fundadora</p>
               <p class="program">Ingeniería en Inteligencia Artificial</p>
               <p class="uni">Universidad Católica Boliviana (UCB)</p>
             </article>
@@ -286,131 +439,109 @@
         </div>
       </section>
 
-      <section class="block" id="unete" aria-labelledby="unete-titulo">
+      <section class="block band cta-band" id="unete" aria-labelledby="unete-titulo">
         <div class="wrap">
           <p class="kicker">Participa</p>
           <h2 id="unete-titulo">Únete</h2>
-          <p class="lede">Esto es lo que la red quiere ofrecer. Estamos en el inicio: cada persona que se suma ayuda a hacerlo posible.</p>
-          <div class="join-grid">
-            <article class="join-card is-main">
-              <p class="card-kicker">Principal</p>
-              <h3>Estudiante</h3>
-              <p>Si estudias en cualquier universidad y en cualquier nivel, puedes traer una idea. No hace falta ser experto.</p>
-              <dl class="mini-dl">
-                <div>
-                  <dt>Buscas</dt>
-                  <dd>Validar una idea, encontrar equipo y experiencia de investigación.</dd>
-                </div>
-                <div>
-                  <dt>Recibes</dt>
-                  <dd>Conexión con docentes y pares, una devolución escrita y visibilidad dentro de la red.</dd>
-                </div>
-                <div>
-                  <dt>Aportas</dt>
-                  <dd>Ideas, energía y difusión en tu universidad.</dd>
-                </div>
-              </dl>
-              <a class="card-link" href="#proponer">Propón tu proyecto</a>
+          <p class="lede">Dos convocatorias abiertas. Elige el rol y completa el formulario oficial.</p>
+          <div class="cta-grid">
+            <article class="cta-card is-leaders tilt-card reveal">
+              <p class="card-kicker">Convocatoria</p>
+              <h3>Líderes estudiantiles</h3>
+              <p>Quienes lideran a la comunidad en cada universidad. Postúlate con el formulario oficial y consulta el reglamento del rol.</p>
+              <div class="cta-actions">
+                <a class="btn btn-primary" href="https://docs.google.com/forms/d/e/1FAIpQLSf5OEiT_UkVpUNN4TOM_5mx_J36dkZt2rhMXihfU1ddOK2iaA/viewform" target="_blank" rel="noopener noreferrer">Postularme como líder</a>
+                <a class="btn btn-ghost-ink" href="reglamento-lideres.html">Ver reglamento</a>
+              </div>
             </article>
-            <article class="join-card">
-              <p class="card-kicker">Criterio académico</p>
-              <h3>Docente</h3>
-              <p>La validación solo existe si hay docentes dispuestos a revisar. Sin eso, JADAI no promete lo que no puede cumplir.</p>
-              <dl class="mini-dl">
-                <div>
-                  <dt>Buscas</dt>
-                  <dd>Estudiantes motivados y vínculo con otras universidades.</dd>
-                </div>
-                <div>
-                  <dt>Recibes</dt>
-                  <dd>Proyectos para revisar y contacto con otros docentes. La red está armando ese flujo; todavía no hay una cola de proyectos esperando.</dd>
-                </div>
-                <div>
-                  <dt>Aportas</dt>
-                  <dd>Criterio académico y unas horas al mes.</dd>
-                </div>
-              </dl>
-              <a class="card-link" href="#proponer">Quiero sumarme como docente</a>
+            <article class="cta-card is-mentors tilt-card reveal">
+              <p class="card-kicker">CALL FOR MENTORS</p>
+              <h3>Mentores</h3>
+              <p>Rol ad honorem, con dedicación flexible. Para docentes, investigadores y profesionales senior de tecnología de toda Bolivia.</p>
+              <div class="cta-actions">
+                <a class="btn btn-primary" href="https://docs.google.com/forms/d/e/1FAIpQLSeta4CyWQitrjLGudpPh4KrEHNrIrGud82MCAZZ6jmZkaoWzA/viewform" target="_blank" rel="noopener noreferrer">Sumarme como mentor</a>
+              </div>
             </article>
-            <article class="join-card">
-              <p class="card-kicker">Una cara por campus</p>
-              <h3>Embajador</h3>
-              <p>Buscamos al menos una persona por universidad. Trae proyectos y docentes de su campus y representa a JADAI ahí. Puede ser estudiante o docente. Todavía no hay una red de embajadores formada: este es el lugar para empezar.</p>
-              <a class="card-link" href="#proponer">Quiero ser embajador en mi campus</a>
+          </div>
+          <div class="join-grid secondary-join">
+            <article class="join-card tilt-card reveal">
+              <p class="card-kicker">Grupo</p>
+              <h3>Conversación abierta</h3>
+              <p>Si quieres enterarte y participar, el grupo de WhatsApp es el punto de encuentro de la comunidad.</p>
+              <a class="card-link" href="https://chat.whatsapp.com/KNrKSTzLwH68PcHUtKXGtx" target="_blank" rel="noopener noreferrer">Unirme al grupo</a>
             </article>
-            <article class="join-card">
-              <p class="card-kicker">Sin convenios firmados</p>
-              <h3>Aliado</h3>
-              <p>Para profesionales, instituciones, empresas y otras comunidades. Un profesional puede aportar mentoría y conexiones. Una institución puede abrir espacios, reconocimiento o problemas reales. Otra comunidad puede invitar a JADAI como aliado comunitario —personas, difusión o mentoría—, no como patrocinador. Cuando haya eventos, también habrá lugar para participar.</p>
-              <p>Aún no hay alianzas firmadas.</p>
-              <a class="card-link" href="#proponer">Conversemos</a>
+            <article class="join-card tilt-card reveal">
+              <p class="card-kicker">Proyectos</p>
+              <h3>Trae una idea</h3>
+              <p>Si estudias en cualquier universidad y en cualquier nivel, puedes proponer un proyecto. Escríbenos: el primer paso es el correo o WhatsApp.</p>
+              <a class="card-link" href="#proponer">Escribir a la comunidad</a>
+            </article>
+            <article class="join-card tilt-card reveal">
+              <p class="card-kicker">Alianzas en proceso</p>
+              <h3>Universidades e instituciones</h3>
+              <p>UNICEN y UCB: alianzas en proceso. Otras universidades, organizaciones, empresas e instituciones se incorporan de forma progresiva. Aún no hay convenios firmados.</p>
+              <a class="card-link" href="mailto:jadai.bolivia@gmail.com">Conversemos</a>
             </article>
           </div>
         </div>
       </section>
 
-      <section class="block band" id="proponer" aria-labelledby="contacto">
+      <section class="block" id="proponer" aria-labelledby="contacto">
         <div class="wrap">
           <p class="kicker">Contacto</p>
-          <h2 id="contacto">Propón tu proyecto</h2>
-          <p class="lede">Cuéntanos el problema, para quién es, cómo piensas abordarlo, con qué datos y recursos cuentas, y cómo cuidarías el uso de la IA. Con eso se puede ver si cabe una revisión.</p>
-          <p class="prose">También puedes escribir si quieres sumarte como estudiante, docente, embajador o aliado.</p>
-
-          <h3>Datos de contacto</h3>
-          <p>Estos datos todavía no están definidos. Cada campo dice «Por completar» a propósito: no hay correos ni enlaces inventados. Cuando existan, se reemplazan aquí. Si una red no se va a usar, se borra esa fila.</p>
-          <!-- Por completar: sustituir el texto «Por completar» por el correo o el enlace real.
-               No agregues una URL de ejemplo. -->
-          <dl class="placeholders">
-            <div>
-              <dt>Correo electrónico</dt>
-              <dd><span class="pending">Por completar</span></dd>
-            </div>
-            <div>
-              <dt>Instagram</dt>
-              <dd><span class="pending">Por completar</span></dd>
-            </div>
-            <div>
-              <dt>LinkedIn</dt>
-              <dd><span class="pending">Por completar</span></dd>
-            </div>
-            <div>
-              <dt>WhatsApp</dt>
-              <dd><span class="pending">Por completar</span></dd>
-            </div>
-          </dl>
-
-          <div class="draft">
-            <h3>Texto para cuando haya correo</h3>
-            <p>Puedes copiar este borrador y guardarlo. Todavía no se envía a ningún lado.</p>
-            <label for="plantilla">Borrador para presentar un proyecto o sumarte</label>
-            <textarea id="plantilla" readonly>Hola, JADAI.
-
-Quiero proponer un proyecto de inteligencia artificial.
-(Si escribes por otro motivo —estudiante, docente, embajador o aliado—, dilo aquí.)
-
-Nombre:
-Universidad:
-Correo:
-
-Problema y para quién es:
-Método (cómo lo abordarías y si se puede repetir):
-Datos y recursos con los que cuentas:
-Cómo cuidarías un uso ético y responsable de la IA:</textarea>
-            <button class="btn btn-primary" type="button" id="copiar">Copiar texto</button>
-            <p id="copiar-estado" role="status" aria-live="polite"></p>
-          </div>
+          <h2 id="contacto">Hablemos</h2>
+          <p class="lede">Usa el canal que te quede más cerca. El correo y el teléfono se pueden copiar.</p>
+          <ul class="contact-list">
+            <li class="tilt-card reveal">
+              <span>Correo</span>
+              <a href="mailto:jadai.bolivia@gmail.com">jadai.bolivia@gmail.com</a>
+              <button class="copy-btn" type="button" data-copy="jadai.bolivia@gmail.com" data-ok="Correo copiado" aria-label="Copiar correo">Copiar</button>
+            </li>
+            <li class="tilt-card reveal">
+              <span>WhatsApp</span>
+              <a href="https://wa.me/59172673684" target="_blank" rel="noopener noreferrer">+591 72673684</a>
+              <button class="copy-btn" type="button" data-copy="+591 72673684" data-ok="Número copiado" aria-label="Copiar teléfono">Copiar</button>
+            </li>
+            <li class="tilt-card reveal">
+              <span>Grupo</span>
+              <a href="https://chat.whatsapp.com/KNrKSTzLwH68PcHUtKXGtx" target="_blank" rel="noopener noreferrer">WhatsApp de la comunidad</a>
+            </li>
+            <li class="tilt-card reveal">
+              <span>Instagram</span>
+              <a href="https://www.instagram.com/jadai.bolivia/" target="_blank" rel="noopener noreferrer">@jadai.bolivia</a>
+            </li>
+            <li class="tilt-card reveal">
+              <span>Facebook</span>
+              <a href="https://www.facebook.com/share/1EzJkhTDfF/" target="_blank" rel="noopener noreferrer">Página oficial</a>
+            </li>
+            <li class="tilt-card reveal">
+              <span>LinkedIn</span>
+              <a href="https://www.linkedin.com/company/jadai-bo/" target="_blank" rel="noopener noreferrer">jadai-bo</a>
+            </li>
+            <li class="tilt-card reveal">
+              <span>X</span>
+              <a href="https://x.com/jadai_bolivia" target="_blank" rel="noopener noreferrer">@jadai_bolivia</a>
+            </li>
+            <li class="tilt-card reveal">
+              <span>TikTok</span>
+              <a href="https://www.tiktok.com/@jadai_bolivia" target="_blank" rel="noopener noreferrer">@jadai_bolivia</a>
+            </li>
+          </ul>
+          <p class="stage">Santa Cruz de la Sierra, con proyección en toda Bolivia.</p>
         </div>
       </section>
     </main>
+
+    <p id="copia-estado" class="copy-status" role="status" aria-live="polite"></p>
 
     <footer class="site-footer">
       <div class="wrap footer-grid">
         <img class="footer-logo" src="assets/logo-con-texto-sobre-negro.svg" width="160" height="160" alt="JADAI">
         <div>
-          <p>Desarrollo Académico Conjunto en Inteligencia Artificial</p>
-          <p>Santa Cruz de la Sierra, Bolivia</p>
+          <p>Potenciando el talento boliviano</p>
+          <p>Santa Cruz de la Sierra · En toda Bolivia</p>
           <ul class="footer-nav">
-            <li><a href="#que-es">Qué es</a></li>
+            <li><a href="#que-es">Comunidad</a></li>
             <li><a href="#que-hacemos">Qué hacemos</a></li>
             <li><a href="#validacion">Validación</a></li>
             <li><a href="#fundadores">Fundadores</a></li>
@@ -418,8 +549,16 @@ Cómo cuidarías un uso ético y responsable de la IA:</textarea>
             <li><a href="reglamento-lideres.html">Reglamento</a></li>
             <li><a href="#proponer">Contacto</a></li>
           </ul>
-          <p class="legal">Comunidad estudiantil sin fines de lucro, en etapa inicial, sin personería jurídica. La validación de JADAI no es una certificación oficial ni un aval universitario.</p>
-          <p class="legal">© 2026 JADAI</p>
+          <ul class="footer-socials">
+            <li><a href="https://www.instagram.com/jadai.bolivia/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">Instagram</a></li>
+            <li><a href="https://www.facebook.com/share/1EzJkhTDfF/" target="_blank" rel="noopener noreferrer" aria-label="Facebook">Facebook</a></li>
+            <li><a href="https://www.linkedin.com/company/jadai-bo/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">LinkedIn</a></li>
+            <li><a href="https://x.com/jadai_bolivia" target="_blank" rel="noopener noreferrer" aria-label="X">X</a></li>
+            <li><a href="https://www.tiktok.com/@jadai_bolivia" target="_blank" rel="noopener noreferrer" aria-label="TikTok">TikTok</a></li>
+            <li><a href="https://chat.whatsapp.com/KNrKSTzLwH68PcHUtKXGtx" target="_blank" rel="noopener noreferrer">Grupo</a></li>
+          </ul>
+          <p class="legal">Comunidad estudiantil, académica y colaborativa, en etapa inicial, sin personería jurídica. La validación no es una certificación oficial ni un aval universitario.</p>
+          <p class="legal">© 2026</p>
         </div>
       </div>
     </footer>
