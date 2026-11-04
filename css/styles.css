@@ -341,19 +341,20 @@ h2[id] {
 
 .nav-panel li a {
   display: block;
-  padding: 0.8rem 0;
+  padding: 0.75rem 0.85rem;
+  margin: 0.12rem 0;
   color: var(--black);
   text-decoration: none;
-  border-bottom: 1px solid var(--line);
+  border-bottom: 0;
+  border-radius: 0.7rem;
   font-weight: 500;
 }
 
 .nav-panel a[aria-current="true"],
 .nav-panel a[aria-current="page"] {
-  text-decoration: underline;
-  text-decoration-color: var(--green);
-  text-decoration-thickness: 2px;
-  text-underline-offset: 0.3em;
+  color: var(--green-ink);
+  background: rgba(42, 146, 121, 0.16);
+  text-decoration: none;
 }
 
 .btn {
@@ -391,7 +392,7 @@ h2[id] {
   align-self: stretch;
 }
 
-@media (min-width: 980px) {
+@media (min-width: 1240px) {
   .nav-toggle {
     display: none;
   }
@@ -412,12 +413,15 @@ h2[id] {
   .nav-panel ul {
     display: flex;
     align-items: center;
-    gap: 1.15rem;
+    gap: 1.45rem;
   }
 
   .nav-panel li a {
     padding: 0.25rem 0;
+    margin: 0;
     border: 0;
+    border-radius: 0;
+    background: transparent;
   }
 
   .nav-panel li a:hover {
@@ -427,17 +431,18 @@ h2[id] {
     text-underline-offset: 0.35em;
   }
 
+  .nav-panel a[aria-current="true"],
+  .nav-panel a[aria-current="page"] {
+    background: transparent;
+    text-decoration: underline;
+    text-decoration-color: var(--green);
+    text-decoration-thickness: 2px;
+    text-underline-offset: 0.3em;
+  }
+
   .btn-nav {
     margin-top: 0;
     align-self: auto;
-  }
-}
-
-@media (min-width: 1180px) {
-  .nav-panel,
-  .nav-check:checked ~ .nav-panel,
-  .nav-panel ul {
-    gap: 1.45rem;
   }
 }
 
@@ -1681,9 +1686,24 @@ textarea {
   border-bottom-color: rgba(255, 255, 255, 0.08);
 }
 
+.hub .nav-check:checked ~ .nav-panel {
+  min-height: calc(100dvh - var(--header));
+  padding-bottom: 2rem;
+}
+
 .hub .nav-panel li a {
   color: var(--white);
   border-bottom-color: rgba(255, 255, 255, 0.08);
+}
+
+.hub .nav-panel a[aria-current="true"],
+.hub .nav-panel a[aria-current="page"] {
+  color: var(--green);
+  background: rgba(42, 146, 121, 0.18);
+}
+
+.hub .nav-panel .btn-nav[aria-current="true"] {
+  box-shadow: 0 0 0 2px #0c0c0c, 0 0 0 4px var(--green);
 }
 
 .hub .btn {
@@ -1800,6 +1820,10 @@ textarea {
   background: var(--paper);
 }
 
+.hub #proponer {
+  background: var(--white);
+}
+
 .social-grid,
 .dock-grid {
   display: grid;
@@ -1859,6 +1883,89 @@ textarea {
 .dock-card > .dock-value:hover,
 a.dock-card:hover .dock-value {
   color: var(--green-dark);
+}
+
+.social-tiles {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.7rem;
+  margin-top: 1.5rem;
+}
+
+.social-tile {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.15rem;
+  min-height: 6.4rem;
+  padding: 0.85rem 0.8rem 0.9rem;
+  border: 1px solid rgba(16, 40, 34, 0.08);
+  border-radius: var(--radius);
+  background: var(--white);
+  color: var(--black);
+  text-decoration: none;
+  overflow: hidden;
+  box-shadow: 0 8px 22px rgba(12, 12, 12, 0.04);
+}
+
+.social-tile .dock-icon {
+  width: 2.15rem;
+  height: 2.15rem;
+  margin-bottom: 0.2rem;
+  border-radius: 0.7rem;
+}
+
+.social-tile .dock-value {
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: rgba(12, 12, 12, 0.68);
+}
+
+.social-tile:hover .dock-value {
+  color: var(--green-dark);
+}
+
+.direct-grid {
+  display: grid;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.direct-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.4rem;
+  min-height: 10.5rem;
+  padding: 1.35rem 1.2rem 1.4rem;
+  border: 1px solid rgba(16, 40, 34, 0.08);
+  border-radius: var(--radius);
+  background: var(--white);
+  color: var(--black);
+  text-decoration: none;
+  overflow: hidden;
+  box-shadow: 0 12px 32px rgba(12, 12, 12, 0.05);
+}
+
+.direct-card .dock-icon {
+  width: 2.85rem;
+  height: 2.85rem;
+}
+
+.direct-card .dock-value {
+  font-size: 1.05rem;
+}
+
+.direct-card > .dock-value:hover,
+a.direct-card:hover .dock-value {
+  color: var(--green-dark);
+}
+
+.whatsapp-direct {
+  display: grid;
+  gap: 1rem;
 }
 
 .hub .tilt-card {
@@ -2006,7 +2113,8 @@ a.dock-card:hover .dock-value {
 
 .cta-grid {
   display: grid;
-  gap: 1rem;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.7rem;
   margin-top: 1.75rem;
 }
 
@@ -2015,11 +2123,18 @@ a.dock-card:hover .dock-value {
   overflow: hidden;
   display: flex;
   flex-direction: column;
-  gap: 0.75rem;
-  min-height: 18rem;
-  padding: 1.5rem 1.3rem 1.45rem;
-  border-radius: 1.4rem;
+  gap: 0.5rem;
+  min-height: 0;
+  padding: 1rem 0.85rem 1rem;
+  border-radius: 1.15rem;
   color: var(--white);
+}
+
+.cta-card .btn {
+  width: 100%;
+  min-height: 2.55rem;
+  padding: 0.45rem 0.55rem;
+  font-size: 0.82rem;
 }
 
 .cta-card.is-leaders {
@@ -2047,7 +2162,13 @@ a.dock-card:hover .dock-value {
 
 .cta-card h3 {
   margin: 0;
-  font-size: clamp(1.8rem, 1.4rem + 1.4vw, 2.4rem);
+  font-size: 1.12rem;
+  line-height: 1.15;
+}
+
+.cta-card > p {
+  font-size: 0.78rem;
+  line-height: 1.35;
 }
 
 .cta-card p,
@@ -2057,6 +2178,9 @@ a.dock-card:hover .dock-value {
 
 .cta-card .card-kicker {
   color: #f4f4f4;
+  font-size: 0.68rem;
+  letter-spacing: 0.08em;
+  overflow-wrap: anywhere;
 }
 
 .cta-actions {
@@ -2187,13 +2311,15 @@ a.dock-card:hover .dock-value {
 }
 
 @media (min-width: 640px) {
-  .social-grid {
+  .social-grid,
+  .social-tiles {
     grid-template-columns: repeat(3, 1fr);
   }
 
   .dock-grid,
   .roles-grid,
-  .contact-list {
+  .contact-list,
+  .whatsapp-direct {
     grid-template-columns: 1fr 1fr;
   }
 }
@@ -2209,17 +2335,51 @@ a.dock-card:hover .dock-value {
   }
 
   .cta-grid {
-    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
+
+  .cta-card {
+    min-height: 18rem;
+    padding: 1.5rem 1.3rem 1.45rem;
+    gap: 0.75rem;
+    border-radius: 1.4rem;
+  }
+
+  .cta-card h3 {
+    font-size: clamp(1.8rem, 1.4rem + 1.4vw, 2.4rem);
+  }
+
+  .cta-card .card-kicker {
+    font-size: 0.75rem;
+    letter-spacing: 0.12em;
+  }
+
+  .cta-card > p {
+    font-size: inherit;
+    line-height: inherit;
+  }
+
+  .cta-card .btn {
+    width: auto;
+    min-height: 3rem;
+    padding: 0.65rem 1.15rem;
+    font-size: inherit;
   }
 }
 
 @media (min-width: 860px) {
-  .social-grid {
+  .social-grid,
+  .social-tiles {
     grid-template-columns: repeat(5, 1fr);
   }
 
   .dock-grid {
     grid-template-columns: repeat(3, 1fr);
+  }
+
+  .direct-grid {
+    grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.2fr);
+    align-items: stretch;
   }
 
   .roles-grid {
@@ -2248,14 +2408,26 @@ a.dock-card:hover .dock-value {
 }
 
 @media (min-width: 980px) {
+  .hub .hero {
+    padding: 4.4rem 0 5rem;
+  }
+}
+
+@media (min-width: 1240px) {
   .hub .nav-panel,
   .hub .nav-check:checked ~ .nav-panel {
     background: transparent;
     border: 0;
   }
 
-  .hub .hero {
-    padding: 4.4rem 0 5rem;
+  .hub .nav-panel a[aria-current="true"],
+  .hub .nav-panel a[aria-current="page"] {
+    background: transparent;
+    color: var(--green);
+  }
+
+  .hub .nav-panel .btn-nav[aria-current="true"] {
+    box-shadow: none;
   }
 }
 
