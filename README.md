@@ -52,4 +52,4 @@ Los archivos de la marca están en `assets/`:
 
 Colores: negro `#0C0C0C`, blanco `#FFFFFF`, papel `#F4F4F4`, teal `#2A9279` y `#449582`, oscuro `#102822`.
 
-La fuente del hub es Outfit (SIL Open Font License), en `assets/fonts/`. El reglamento conserva Fraunces en títulos de documento.
+La fuente del hub es Outfit (SIL Open Font License), en `assets/fonts/`.
