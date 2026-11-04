@@ -1744,6 +1744,14 @@ textarea {
   margin: 0.35rem 0 0;
 }
 
+.hub .expansion {
+  margin-top: 0.65rem;
+  max-width: 28rem;
+  font-size: 0.95rem;
+  line-height: 1.4;
+  color: #d8d8d8;
+}
+
 .hub .hero h1 {
   margin: 0;
   font-size: 0;
