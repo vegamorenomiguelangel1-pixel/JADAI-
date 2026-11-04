@@ -1836,6 +1836,11 @@ textarea {
   color: var(--white);
 }
 
+.dock-icon svg {
+  display: block;
+  flex-shrink: 0;
+}
+
 .dock-label {
   font-size: 0.75rem;
   font-weight: 600;
@@ -1883,6 +1888,27 @@ a.dock-card:hover .dock-value {
   max-width: 16em;
   font-style: normal;
   font-weight: 500;
+}
+
+.hub .purpose {
+  margin-bottom: 0;
+}
+
+.hub .text-rule {
+  display: block;
+  width: 3.75rem;
+  height: 2px;
+  margin: 1.5rem 0 1.45rem;
+  border: 0;
+  background: #2a9279;
+  opacity: 0.55;
+  border-radius: 999px;
+}
+
+.hub .text-rule.is-soft {
+  width: 2.55rem;
+  margin: 1.35rem 0 1.4rem;
+  opacity: 0.4;
 }
 
 .hub .statements article,
