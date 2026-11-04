@@ -1942,6 +1942,15 @@ a.dock-card:hover .dock-value {
   color: var(--green-ink);
 }
 
+.founders-label + .aside {
+  margin-top: 0;
+  max-width: 40rem;
+}
+
+.role-card .plain-list {
+  font-size: 0.95rem;
+}
+
 .roles-grid {
   display: grid;
   gap: 0.85rem;
@@ -2181,6 +2190,10 @@ a.dock-card:hover .dock-value {
 
   .roles-grid {
     grid-template-columns: repeat(3, 1fr);
+  }
+
+  .role-card:has(ul) {
+    grid-column: span 2;
   }
 
   .hub .values {
