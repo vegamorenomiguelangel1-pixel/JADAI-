@@ -1,5 +1,5 @@
 /* Paleta de marca: #0C0C0C, #FFFFFF, #F4F4F4, #2A9279, #449582, #102822.
-   Outfit es la fuente del sitio. Fraunces se conserva en el reglamento. */
+   Outfit es la fuente del sitio. */
 
 @font-face {
   font-family: Outfit;
@@ -1236,8 +1236,6 @@ textarea {
     animation: none;
   }
 }
-
-/* Reglamento de Líderes Estudiantiles */
 
 .visually-hidden {
   position: absolute;
