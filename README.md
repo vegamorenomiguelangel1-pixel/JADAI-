@@ -38,7 +38,7 @@ Si más adelante usan un dominio propio, actualicen en `index.html` las etiqueta
 - Grupo de WhatsApp: <https://chat.whatsapp.com/KNrKSTzLwH68PcHUtKXGtx>
 - Formulario de líderes estudiantiles y CALL FOR MENTORS: enlaces en `#unete`
 
-No agregues métricas, teléfonos o correos personales, ni alianzas como firmadas. UNICEN y UCB están en proceso. No menciones UPB.
+No agregues métricas, teléfonos o correos personales, ni nombres de universidades o instituciones como aliadas o «en proceso». No menciones UPB.
 
 ## Marca y tipografía
 
