@@ -1,6 +1,6 @@
 # Sitio de la comunidad
 
-Sitio estático oficial (HTML, CSS y JavaScript). No hay paso de compilación ni dependencias. La frase pública es: «Potenciando el talento boliviano».
+Sitio estático oficial (HTML, CSS y JavaScript). No hay paso de compilación ni dependencias. La frase pública es: «Potenciando el talento en Bolivia».
 
 ## Verlo en local
 
